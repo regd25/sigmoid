@@ -1,9 +1,11 @@
 body {
     margin: 0%;
+    font-family: fuente_principal;
+    background-color: #F2F2F2;
 }
 @font-face {
     font-family: fuente_principal;
-    src: url(../fonts/Muli-Light.ttf)
+    src: url(../fonts/Muli-Regular.ttf)
 }
 @font-face {
     font-family: fuente_secundaria;
@@ -13,11 +15,31 @@ body {
     font-family: fuente_tercearia;
     src: url(../fonts/Muli-SemiBold.ttf)
 }
+@font-face {
+    font-family: fuente_bold;
+    src: url(../fonts/Muli-Bold.ttf)
+}
+@font-face {
+    font-family: roboto-condesed;
+    src: url(../fonts/RobotoCondensed-Regular.ttf)
+}
+h1 {
+    font-family: fuente_bold;
+}
+section h3 {
+    font-family: roboto-condesed;
+    color: #076FFB;
+    
+}
+h4 {
+    font-family: fuente_bold;
+}
 header {
     width: 100%;
     height: 80px;
     display: block;
     position: absolute;
+    z-index: 1;
 }
 header img{
     margin: 15px;
@@ -37,48 +59,44 @@ nav a {
 }
 section {
     display: flex;
-    justify-content: center;
     align-content: center;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
-    margin: auto;
+    position: relative;
+    z-index: 0;
 }
-section img {
-    width: 100vw;
+.inicio {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
 }
-
-section h1 {
-    font-family: fuente_principal;
-    font-size: 55px;
-    text-align: center; 
+.inicio img {
+    width: 100%;
+    height: 100vh;
 }
-section h2 {
-    font-family: fuente_principal;
-    margin-top: 25px;
-    width: 70%;
-    text-align: center;
+.inicio .slide-menu{
+    position: absolute;
+    margin-top: 90vh;
+    margin-left: 90vw;
 }
-section h3 {
-    font-family: fuente_principal;
-    text-align: center;
+.nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-footer {
-    text-align: center;
+section .info {
+    padding: 5%;
+    display: inline-block;
+    width: 40%;
 }
-footer h4 {
-    font-family: fuente_principal;
-    font-size: 30px;
-    text-align: center;
+.nosotros img {
+    display: inline-block;
+    width: 50%;
 }
-footer a {
-    font-size: 16px;
-    color: white;
-    margin-left: 1%;
-    font-family: fuente_principal;
-}
-@media screen and (max-width:600px){
-    footer a {
-        display: block;
-        margin-top: 10px;
-    }
+.servicios {
+    justify-content: center;
 }
