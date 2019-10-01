@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Estamos Trabajando</title>
+    <title>Sigmoid</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -23,11 +23,11 @@
     </header>
     <div class="inicio">
         <div class="slider">
-            <img src="img/inicio/Simoid-slide-1.jpg">
-        </div>
-        <div class="slide-menu">
-            <a href="https://www.facebook.com/sigmoidmx/">F</a>
-            <a href="">Insta</a>
+                <div class="slide-menu">
+                    <a href=""><img src="img/icons/Instagram.png" id="insta" alt="instagram"></a>
+                    <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face" alt="facebook"></a>       
+                </div>
+            <img src="img/inicio/Simoid-slide-1.jpg"> 
         </div>
     </div>
     
@@ -41,73 +41,82 @@
         </div>
         <img src="img/nosotros/Imagen.png" alt="Grupo">
     </section>
-    <section class="servicios" id="servicios">
+    <section class="servicios" >
         <img src="img/servicios/servicios.jpg" alt="Servicios" id="serv-central">
-        <h3>SERVICIOS</h3>
-        <h1>Todo lo que necesitas en un solo lugar</h1>
-        <div class="serv-icon">
-            <div class="serv-icons">
-                <img src="img/icons/Software.png" alt="Software">
-                <h4>Software</h4>
-                <span>Desarrollamos sistemas que agilicen tu negocio</span>
-                <a href="http://sigmoid.com.mx/software.html">Ver más</a>
+        <div class="services-info">
+            <h3 id="servicios">SERVICIOS</h3>
+            <h1>Todo lo que necesitas en un solo lugar</h1>
+            <div class="serv-container">
+                <div class="serv-icons">
+                    <img src="img/icons/Software.png" alt="Software">
+                    <h4>Software</h4>
+                    <p>Desarrollamos sistemas que agilicen tu negocio</p>
+                    <br><a href="http://sigmoid.com.mx/software.html">Ver más</a>
+                </div>
+                <div class="serv-icons">
+                    <img src="img/icons/Hardware.png" alt="Hardware">
+                    <h4>Hardware</h4>
+                    <p>Dale vida a tu proyecto, nuestros servicios de diseño y fabricación de PCBs garantizan una excelente calidad y rapidez.</p>
+                    <br><a href="http://sigmoid.com.mx/hardware.html">Ver más</a>
+                </div>
+                <div class="serv-icons">
+                    <img src="img/icons/Web.png" alt="Desarrollo web">
+                    <h4>Desarrollo web</h4>
+                    <p>Una página web es el mejor camino para expandir tu negocio, te ofrecemos los mejores servicios para el desarrollo de una web con un diseño increíble e inteligente.</p>
+                    <br><a href="http://sigmoid.com.mx/web.html">Ver más</a>
+                </div>
+                <div class="serv-icons">
+                    <img src="img/icons/Capacitación.png" alt="Capacitacion">
+                    <h4>Capacitación</h4>
+                    <p>Mejora tus habilidades y las de tus colaboradores. Te capacitamos para desarrollar un alto potencial en las mejores tecnologías de hoy en día.</p>
+                    <br><a href="http://sigmoid.com.mx/capacitacion.html">Ver más</a>
+                </div> 
             </div>
-            <div class="serv-icons">
-                <img src="img/icons/Hardware.png" alt="Hardware">
-                <h4>Hardware</h4>
-                <span>Dale vida a tu proyecto, nuestros servicios de diseño y fabricación de PCBs garantizan una excelente calidad y rapidez.</span>
-                <a href="http://sigmoid.com.mx/hardware.html">Ver más</a>
-            </div>
-            <div class="serv-icons">
-                <img src="img/icons/Web.png" alt="Desarrollo web">
-                <h4>Desarrollo web</h4>
-                <span>Una página web es el mejor camino para expandir tu negocio, te ofrecemos los mejores servicios para el desarrollo de una web con un diseño increíble e inteligente.</span>
-                <a href="http://sigmoid.com.mx/web.html">Ver más</a>
-            </div>
-            <div class="serv-icons">
-                <h4>Capacitación</h4>
-                <img src="img/icons/Capacitación.png" alt="Capacitacion">
-                <span>Mejora tus habilidades y las de tus colaboradores. Te capacitamos para desarrollar un alto potencial en las mejores tecnologías de hoy en día.</span>
-                <a href="http://sigmoid.com.mx/capacitacion.html">Ver más</a>
-            </div> 
         </div>
     </section>
     <section class="conocenos" id="conocenos">
-        <h3>CONÓCENOS</h3>
-        <h1>Desata el potencial de tu idea con nosotros</h1>
-        <span>Permítenos ayudarte en tu idea, proyecto o negocio, <b>contáctanos</b>.</span>
-        <a href="#footer">Contacto</a>
+        <div class="container">
+            <img src="img/Contáctanos/Imagen.jpg" alt="conocenos">
+            <div class="info">
+                <h3>CONÓCENOS</h3>
+                <h1>Desata el potencial de tu idea con nosotros</h1>
+                <span>Permítenos ayudarte en tu idea, proyecto o negocio, <b>contáctanos</b>.</span>
+                <br><br><br><br>
+                <a href="#footer">Contacto</a>
+            </div>
+        </div>
     </section>
     <footer id="footer">
-        <h3>Cuéntanos tus dudas</h3>
-        <form action="email.php" method="post" class="form-consulta"> 
-            <label>Nombre y apellido: <span>*</span>
-                <input type="text" name="nombre" placeholder="Nombre y apellido" class="campo-form" required>
-            </label><br>
+        <div class="contact-form">
+            <h3>Cuéntanos tus dudas</h3>
+            <form action="email.php" method="post" class="form-consulta"> 
+                    <input type="text" name="nombre" placeholder="Nombre" class="campo-form" required>
+                </label><br>
 
-            <label>Teléfono: <span>*</span>
-                <input type="text" name="nombre" placeholder="Teléfono" class="campo-form" required>
-            </label><br>
-
-            <label>Email: <span>*</span>
-                <input type="email" name="email" placeholder="Email" class="campo-form" required>
-            </label><br>xd
-            
-            <label>Mensaje:
-                <textarea name="mensaje" class="campo-form"></textarea>
-            </label><br>
+                    <input type="text" name="nombre" placeholder="Teléfono" class="campo-form" required>
+                </label><br>
     
-            <input type="submit" value="Enviar" class="btn-form">
-        </form>
-        <h3>Datos de contacto</h3>
-        <p>T: 999 921 6187</p>
-        <p>C: contacto@sigmoid.com.mx</p>
-        <p>D: Calle 36 #530B entre 71 y 73 Col. Centro Mérida, Yucatán, México</p>
-        <h3>Siguenos en:</h3>
-        <a href="https://www.facebook.com/sigmoidmx/">F</a>
-        <a href="">Insta</a>
-
-        <img src="img/Sigmoid.png" alt="logo">
+                    <input type="email" name="email" placeholder="Email" class="campo-form" required>
+                </label><br>
+                
+                    <textarea name="mensaje" class="campo-form" placeholder="Mensaje"></textarea>
+                </label><br>
+        
+                <input type="submit" value="Enviar" class="btn-form">
+            </form>
+        </div>
+        <div class="contact">
+            <h3>Datos de contacto</h3>
+            <p>T: 999 921 6187</p>
+            <p>C: contacto@sigmoid.com.mx</p>
+            <p>D: Calle 36 #530B entre 71 y 73 Col. Centro Mérida, Yucatán, México</p>
+            <h3>Siguenos en:</h3>
+            <a href=""><img src="img/icons/Instagram.png" id="insta" alt="instagram"></a>
+            <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face" alt="facebook"></a>
+        </div>
+        <div class="footlogo">
+            <img src="img/Sigmoid.png" alt="logo">
+        </div>
     </footer>
 </body>
 </html>

@@ -75,14 +75,24 @@ section {
 }
 .inicio img {
     width: 100%;
-    height: 100vh;
 }
 .inicio .slide-menu{
     position: absolute;
     margin-top: 90vh;
     margin-left: 90vw;
 }
+#insta{
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+}
+#face{
+    height: 20px;
+    width: 10px;
+    margin: 5px;
+}
 .nosotros {
+    background-color: #F2F2F2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,6 +107,128 @@ section .info {
     display: inline-block;
     width: 50%;
 }
-.servicios {
-    justify-content: center;
+.servicios{
+    text-align: center;
+}
+.servicios img{
+    width: 100%;
+    
+}
+.services-info {
+    height: 100vh;
+    position: absolute;
+    color: white !important;
+    margin-top: 25%;
+    padding: 10%;
+}
+.services-info h3{
+    color: white;
+}
+.serv-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.serv-icons{
+    background-color: #1956CE;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 20px 50px;
+    width: 30%;
+}
+.serv-icons img{
+    width: 66px;
+}
+.serv-icons h4{
+    margin: .6em 0;
+}
+.serv-icons p{
+    margin: .6em 0;
+}
+.serv-icons a{
+    font-family: fuente_bold;
+    font-size: 12px;
+    text-decoration: none;
+    color: #1956CE;
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+.conocenos {
+    width: 100%;
+}
+.container{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+.container img {
+    width: 40%;
+}
+.container .info{
+    text-align: end;
+}
+.container .info a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #076FFB;
+    padding: 5px 20px;
+    border: 2px solid #076FFB;
+    border-radius: 20px;
+}
+footer{
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    height: 430px;
+    width: 100%;
+}
+footer h3{
+    font-family: fuente_tercearia;
+}
+ .contact-form{
+    
+    margin: 50px auto;
+    width: 25%;
+    padding: 0 20px;
+}
+.contact-form form{
+    font-size: 14px;
+}
+.contact-form .campo-form{
+    margin: 5px auto;
+    padding: 7px 100px 7px 10px;
+    color: white;
+    background-color: #2B2B2B;
+    border: 0px;
+    border-radius: 3px;
+}
+textarea.campo-form{
+    padding: 7px 100px 47px 10px !important;
+}
+.btn-form {
+    color: white;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 4px 30px;
+}
+ .contact{
+    margin: 50px auto;
+    width: 25%;
+    padding: 0 20px;
+}
+ .footlogo{
+    width: 20%;
+    margin: auto 10px 20px -10px;
+    text-align: end;
+    padding: 0 20px;
+    
+}
+.footlogo img{
+    width: 220px;
+    height: 50px;
 }
