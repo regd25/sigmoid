@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,102 @@
     <title>Sigmoid</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
-   <!--  <link rel="icon" type="image/png" href="img/favicon_crasterras.png" /> -->
 </head>
+
 <body>
     <header>
-        <img src="img/Sigmoid.png" id="logo">
-        <nav>
-            <a href="#inicio">INICIO</a>
-            <a href="#nosotros">NOSOTROS</a>
-            <a href="#servicios">SERVICIOS</a>
-            <a href="#conocenos">CONTACTO</a>
+        <input type="checkbox" id="btn-menu" />
+        <label for="btn-menu"><i class="fa fa-bars"></i></label>
+        <nav class="menu">
+            <figure>
+                <img src="img/Sigmoid.png" id="logo">
+            </figure>
+            <div>
+                <ul>
+                    <li>
+                        <a data-scroll href="#inicio">INICIO</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#nosotros">NOSOTROS</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#servicios">SERVICIOS</a>
+                    </li>
+                    <li>
+                        <a data-scroll href="#conocenos">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div class="inicio">
-        <div class="slider">
-                <div class="slide-menu">
-                    <a href=""><img src="img/icons/Instagram.png" id="insta" alt="instagram"></a>
-                    <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face" alt="facebook"></a>       
+    <section class="inicio">
+        <div class="text-slider-wrapper">
+            <div class="text-slider">
+                <div class="text-slide">
+                    <h1>A blessing for <br> every skin.</h1>
                 </div>
-            <img src="img/inicio/Simoid-slide-1.jpg"> 
+                <div class="text-slide">
+                    <h1>The perfect mix of <br> old & new.</h1>
+                </div>
+                <div class="text-slide">
+                    <h1>A journey over borders <br> & generations.</h1>
+                </div>
+                <div class="text-slide">
+                    <h1>Your are the <br> stylist.</h1>
+                </div>
+            </div>
         </div>
-    </div>
-    
+        <div class="slider-control">
+            <div class="prev"><button type="button">
+                    <i class="fas fa-arrow-circle-left"></i>
+                </button></div>
+            <div class="next"><button type="button">
+                    <i class="fas fa-arrow-circle-right"></i>
+                </button></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="slider">
+
+            <div>
+                <img src="img/inicio/Simoid-slide-1.jpg">
+            </div>
+            <div>
+                <img src="img/inicio/Simoid-slide-2.jpg">
+            </div>
+            <div>
+                <img src="img/inicio/Simoid-slide-3.jpg">
+            </div>
+            <div>
+                <img src="img/inicio/Simoid-slide-4.jpg">
+            </div>
+        </div>
+        <div class="redesSociales">
+            <a href="#">
+                Facebook <i class="fab fa-facebook-square"></i>
+            </a><br><br><br>
+            <a href="#">
+                Facebook <i class="fab fa-facebook-square"></i>
+            </a>
+        </div>
+    </section>
     <section class="nosotros" id="nosotros">
         <div class="info">
             <h3>NOSOTROS</h3>
             <h1>Cambiamos la forma de desarrollar proyectos</h1>
             <span>
-                Proporcionamos soluciones ágiles y escalables. Integramos las mejores y más innovadoras tecnologías en el mercado, garantizando la satisfacción de nuestros clientes y desarrollando potencial humano que compita en el mercado global.
+                Proporcionamos soluciones ágiles y escalables. Integramos las mejores y más innovadoras tecnologías en
+                el mercado, garantizando la satisfacción de nuestros clientes y desarrollando potencial humano que
+                compita en el mercado global.
             </span>
         </div>
         <img src="img/nosotros/Imagen.png" alt="Grupo">
     </section>
-    <section class="servicios" >
+    <section class="servicios">
         <img src="img/servicios/servicios.jpg" alt="Servicios" id="serv-central">
         <div class="services-info">
             <h3 id="servicios">SERVICIOS</h3>
@@ -56,21 +118,24 @@
                 <div class="serv-icons">
                     <img src="img/icons/Hardware.png" alt="Hardware">
                     <h4>Hardware</h4>
-                    <p>Dale vida a tu proyecto, nuestros servicios de diseño y fabricación de PCBs garantizan una excelente calidad y rapidez.</p>
+                    <p>Dale vida a tu proyecto, nuestros servicios de diseño y fabricación de PCBs garantizan una
+                        excelente calidad y rapidez.</p>
                     <br><a href="http://sigmoid.com.mx/hardware.html">Ver más</a>
                 </div>
                 <div class="serv-icons">
                     <img src="img/icons/Web.png" alt="Desarrollo web">
                     <h4>Desarrollo web</h4>
-                    <p>Una página web es el mejor camino para expandir tu negocio, te ofrecemos los mejores servicios para el desarrollo de una web con un diseño increíble e inteligente.</p>
+                    <p>Una página web es el mejor camino para expandir tu negocio, te ofrecemos los mejores servicios
+                        para el desarrollo de una web con un diseño increíble e inteligente.</p>
                     <br><a href="http://sigmoid.com.mx/web.html">Ver más</a>
                 </div>
                 <div class="serv-icons">
                     <img src="img/icons/Capacitación.png" alt="Capacitacion">
                     <h4>Capacitación</h4>
-                    <p>Mejora tus habilidades y las de tus colaboradores. Te capacitamos para desarrollar un alto potencial en las mejores tecnologías de hoy en día.</p>
+                    <p>Mejora tus habilidades y las de tus colaboradores. Te capacitamos para desarrollar un alto
+                        potencial en las mejores tecnologías de hoy en día.</p>
                     <br><a href="http://sigmoid.com.mx/capacitacion.html">Ver más</a>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -89,19 +154,19 @@
     <footer id="footer">
         <div class="contact-form">
             <h3>Cuéntanos tus dudas</h3>
-            <form action="email.php" method="post" class="form-consulta"> 
-                    <input type="text" name="nombre" placeholder="Nombre" class="campo-form" required>
+            <form action="email.php" method="post" class="form-consulta">
+                <input type="text" name="nombre" placeholder="Nombre" class="campo-form" required>
                 </label><br>
 
-                    <input type="text" name="nombre" placeholder="Teléfono" class="campo-form" required>
+                <input type="text" name="nombre" placeholder="Teléfono" class="campo-form" required>
                 </label><br>
-    
-                    <input type="email" name="email" placeholder="Email" class="campo-form" required>
+
+                <input type="email" name="email" placeholder="Email" class="campo-form" required>
                 </label><br>
-                
-                    <textarea name="mensaje" class="campo-form" placeholder="Mensaje"></textarea>
+
+                <textarea name="mensaje" class="campo-form" placeholder="Mensaje"></textarea>
                 </label><br>
-        
+
                 <input type="submit" value="Enviar" class="btn-form">
             </form>
         </div>
@@ -112,11 +177,52 @@
             <p>D: Calle 36 #530B entre 71 y 73 Col. Centro Mérida, Yucatán, México</p>
             <h3>Siguenos en:</h3>
             <a href=""><img src="img/icons/Instagram.png" id="insta" alt="instagram"></a>
-            <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face" alt="facebook"></a>
+            <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face"
+                    alt="facebook"></a>
         </div>
         <div class="footlogo">
             <img src="img/Sigmoid.png" alt="logo">
         </div>
     </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script type="text/javascript">
+        var sickPrimary = {
+            autoplay: true,
+            autoplaySpeed: 1400,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 1800,
+            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+            asNavFor: '.text-slider',
+            centerMode: true,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        }
+        var sickSecondary = {
+            autoplay: true,
+            autoplaySpeed: 1400,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 1800,
+            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
+            asNavFor: '.slider',
+            prevArrow: $('.prev'),
+            nextArrow: $('.next')
+        }
+        $('.slider').slick(sickPrimary);
+        $('.text-slider').slick(sickSecondary);
+
+
+    </script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1200,
+            speedAsDuration: true
+        });
+    </script>
 </body>
+
 </html>

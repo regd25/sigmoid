@@ -1,7 +1,9 @@
 body {
-    margin: 0%;
+    margin: 0px;
+    padding: 0px;
     font-family: fuente_principal;
     background-color: #F2F2F2;
+    overflow-x:hidden;
 }
 @font-face {
     font-family: fuente_principal;
@@ -34,6 +36,7 @@ section h3 {
 h4 {
     font-family: fuente_bold;
 }
+/* inicio de menu */
 header {
     width: 100%;
     height: 80px;
@@ -41,22 +44,117 @@ header {
     position: absolute;
     z-index: 1;
 }
-header img{
-    margin: 15px;
-    height: 50px;
-}
 nav {
-    float: right;
-    padding: 31px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
 }
-nav a {
-    font-size: 14px;
+nav figure {
+    width: 30%;
+}
+nav div {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+nav div ul {
+    list-style: none;
+    overflow: hidden;
+}
+nav div ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+nav div ul li a {
+    display: block;
     font-family: fuente_tercearia;
     text-decoration: none;
     color: white;
-    margin: 0 5px;
-    padding: 13px;
+    text-transform: uppercase;
+    padding: 20px;
 }
+nav div ul li a:hover {
+    background-color: #076FFB;
+}
+
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+    width:100%;
+    background-color: #0e3b96;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+/*-------- end menu -----------*/
+/*-------- inicio de slider -----------*/
+.inicio {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+}
+.inicio div {
+    width: 100%;
+}
+.inicio div img {
+    width: 100%;
+}
+.slider-control {
+      margin: 0%;
+      position: absolute;
+      z-index: 2;
+      bottom: 8%;
+      left: 25%;
+      width: 75%;
+      display: flex;
+}
+.slider-control button {
+      color: #fff;
+      background: none;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, .3);
+      font-size: 40px;
+      border-radius: 50%;
+      margin: 10px;
+      display: inline-block;
+}
+.slider-control button:focus {
+      outline: none;
+}
+.text-slider-wrapper {
+      z-index: 5;
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      left: 15%;
+}
+.text-slider-wrapper h1 {
+    color: white;
+}
+/* .overlay {
+      z-index: 1;
+      position: fixed;
+      height: 100vh;
+      width: 20%;
+      right: 55%;
+      background: rgba(0, 0, 0, .85);
+} */
+.redesSociales {
+    z-index: 1;
+    position: absolute;
+    height: 100vh;
+    width: 20%;
+    top: 65%;
+    left: 10%; 
+}
+.redesSociales a {
+    color: white;
+    font-size: 18px;
+}
+/* fin de slider */
 section {
     display: flex;
     align-content: center;
@@ -65,31 +163,6 @@ section {
     width: 100%;
     position: relative;
     z-index: 0;
-}
-.inicio {
-    display: flex;
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    height: 100vh;
-}
-.inicio img {
-    width: 100%;
-}
-.inicio .slide-menu{
-    position: absolute;
-    margin-top: 90vh;
-    margin-left: 90vw;
-}
-#insta{
-    height: 20px;
-    width: 20px;
-    margin: 5px;
-}
-#face{
-    height: 20px;
-    width: 10px;
-    margin: 5px;
 }
 .nosotros {
     background-color: #F2F2F2;
