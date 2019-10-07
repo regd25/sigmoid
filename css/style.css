@@ -85,7 +85,7 @@ nav div ul li a:hover {
 	top:0;
     width:100%;
     background-color: #0e3b96;
-	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+	box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
 }
 /*-------- end menu -----------*/
 /*-------- inicio de slider -----------*/
@@ -94,7 +94,6 @@ nav div ul li a:hover {
     position: relative;
     z-index: 0;
     width: 100%;
-    height: 100vh;
 }
 .inicio div {
     width: 100%;
@@ -182,14 +181,18 @@ section .info {
 }
 .servicios{
     text-align: center;
+    background-image: url("../img/servicios/servicios.jpg");
+    background-size: 100%;
+    background-color: #183fa1;
+    background-repeat: no-repeat;
+
 }
 .servicios img{
     width: 100%;
     
 }
 .services-info {
-    height: 100vh;
-    position: absolute;
+    height: 100%;
     color: white !important;
     margin-top: 25%;
     padding: 10%;
@@ -205,8 +208,9 @@ section .info {
     background-color: #1956CE;
     border-radius: 20px;
     margin: 10px auto;
-    padding: 20px 50px;
+    padding: 5% 6%;
     width: 30%;
+    position: relative;
 }
 .serv-icons img{
     width: 66px;
@@ -219,12 +223,20 @@ section .info {
 }
 .serv-icons a{
     font-family: fuente_bold;
+    width: 15%;
     font-size: 12px;
     text-decoration: none;
     color: #1956CE;
     padding: 5px 20px;
     background-color: white;
     border-radius: 20px;
+    position: absolute;
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
 }
 .conocenos {
     width: 100%;
@@ -239,9 +251,11 @@ section .info {
 }
 .container img {
     width: 40%;
+    height: 40%;
 }
 .container .info{
     text-align: end;
+    width: 50%;
 }
 .container .info a{
     font-size: 15px;
@@ -256,7 +270,7 @@ footer{
     color:white;
     display: flex;
     flex-wrap: wrap;
-    height: 430px;
+    height: 100%;
     width: 100%;
 }
 footer h3{
@@ -266,21 +280,24 @@ footer h3{
     
     margin: 50px auto;
     width: 25%;
-    padding: 0 20px;
+    padding: 0 5%;
 }
 .contact-form form{
     font-size: 14px;
 }
 .contact-form .campo-form{
     margin: 5px auto;
-    padding: 7px 100px 7px 10px;
+    padding: 7px 0;
+    padding-left: 2%;
+    padding-right: 40%;
     color: white;
     background-color: #2B2B2B;
     border: 0px;
     border-radius: 3px;
 }
 textarea.campo-form{
-    padding: 7px 100px 47px 10px !important;
+    padding-bottom: 25% !important;
+    padding-right: 44% !important;
 }
 .btn-form {
     color: white;
@@ -292,13 +309,13 @@ textarea.campo-form{
  .contact{
     margin: 50px auto;
     width: 25%;
-    padding: 0 20px;
+    padding: 0 5%;
 }
  .footlogo{
     width: 20%;
     margin: auto 10px 20px -10px;
     text-align: end;
-    padding: 0 20px;
+    padding: 0 5%;
     
 }
 .footlogo img{
