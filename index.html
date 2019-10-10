@@ -151,13 +151,13 @@
         </div>
     </section>
     <footer id="footer">
-        <div class="contact-form">
+        <div id="textoContacto" class="contact-form">
             <h3>Cuéntanos tus dudas</h3>
-            <form action="email.php" method="post" class="form-consulta">
+            <form id="formulario" action="email.php" method="post" class="form-consulta">
                 <input type="text" name="nombre" placeholder="Nombre" class="campo-form" required>
                 </label><br>
 
-                <input type="text" name="nombre" placeholder="Teléfono" class="campo-form" required>
+                <input type="tel" name="telefono" placeholder="Teléfono" class="campo-form" required>
                 </label><br>
 
                 <input type="email" name="email" placeholder="Email" class="campo-form" required>
@@ -196,6 +196,24 @@
         });
     </script>
     <script src="js/efectos.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script>
+        $(function() {
+            $('#formulario').validate({
+                submitHandler: function(form) {
+                    $(form).ajaxSubmit({
+                        url: 'email.php',
+                        success: function() {
+                            $('#textoContacto h3').hide();
+                            $('#formulario').hide();
+                            $('#textoContacto').append("<p class='thanks'>Gracias por contactar con nosotros.</p>")
+                        }
+                    })
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
