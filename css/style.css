@@ -3,40 +3,50 @@ body {
     padding: 0px;
     font-family: fuente_principal;
     background-color: #F2F2F2;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
+
 @font-face {
     font-family: fuente_principal;
     src: url(../fonts/Muli-Regular.ttf)
 }
+
 @font-face {
     font-family: fuente_secundaria;
     src: url(../fonts/Muli-Regular.ttf)
 }
+
 @font-face {
     font-family: fuente_tercearia;
     src: url(../fonts/Muli-SemiBold.ttf)
 }
+
 @font-face {
     font-family: fuente_bold;
     src: url(../fonts/Muli-Bold.ttf)
 }
+
 @font-face {
     font-family: roboto-condesed;
     src: url(../fonts/RobotoCondensed-Regular.ttf)
 }
+
 h1 {
     font-family: fuente_bold;
 }
+
 section h3 {
     font-family: roboto-condesed;
     color: #076FFB;
-    
 }
+
 h4 {
     font-family: fuente_bold;
 }
+
+
 /* inicio de menu */
+
 header {
     width: 100%;
     height: 80px;
@@ -44,29 +54,35 @@ header {
     position: absolute;
     z-index: 1;
 }
+
 nav {
     width: 100%;
     display: flex;
     text-align: center;
     justify-content: space-around;
 }
+
 nav figure {
     width: 30%;
 }
+
 nav div {
     width: 70%;
     display: flex;
     justify-content: flex-end;
 }
+
 nav div ul {
     list-style: none;
     overflow: hidden;
 }
+
 nav div ul li {
     float: left;
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
+
 nav div ul li a {
     display: block;
     font-family: fuente_tercearia;
@@ -75,85 +91,98 @@ nav div ul li a {
     text-transform: uppercase;
     padding: 20px;
 }
+
 nav div ul li a:hover {
-    background-color: #076FFB;
+    /* background-color: #076FFB; */
+    border-bottom: 5px white solid;
 }
 
 .menu-fixed {
-	position:fixed;
-	z-index:1000;
-	top:0;
-    width:100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
     background-color: #0e3b96;
-	box-shadow:0 1px 6px 0 rgba(32,33,36,0.28);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
+
+
 /*-------- end menu -----------*/
+
+
 /*-------- inicio de slider -----------*/
+
 .inicio {
     display: flex;
     position: relative;
     z-index: 0;
     width: 100%;
 }
+
 .inicio div {
     width: 100%;
 }
+
 .inicio div img {
     width: 100%;
 }
+
 .slider-control {
-      margin: 0%;
-      position: absolute;
-      z-index: 2;
-      bottom: 8%;
-      left: 25%;
-      width: 75%;
-      display: flex;
+    margin: 0%;
+    position: absolute;
+    z-index: 2;
+    bottom: 15%;
+    left: 10%;
+    width: 55%;
+    display: flex;
 }
+
+.slider-control div {
+    width: 4%;
+}
+
 .slider-control button {
-      color: #fff;
-      background: none;
-      padding: 24px;
-      border: 1px solid rgba(255, 255, 255, .3);
-      font-size: 40px;
-      border-radius: 50%;
-      margin: 10px;
-      display: inline-block;
+    color: #fff;
+    background: none;
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
 }
+
 .slider-control button:focus {
-      outline: none;
+    outline: none;
 }
+
 .text-slider-wrapper {
-      z-index: 5;
-      position: absolute;
-      width: 100%;
-      top: 40%;
-      left: 15%;
+    z-index: 5;
+    position: absolute;
+    /* width: 10%; */
+    top: 40%;
+    left: 15%;
 }
+
 .text-slider-wrapper h1 {
     color: white;
 }
-/* .overlay {
-      z-index: 1;
-      position: fixed;
-      height: 100vh;
-      width: 20%;
-      right: 55%;
-      background: rgba(0, 0, 0, .85);
-} */
+
 .redesSociales {
     z-index: 1;
     position: absolute;
     height: 100vh;
     width: 20%;
-    top: 65%;
-    left: 10%; 
+    top: 80%;
+    left: 85%;
 }
+
 .redesSociales a {
     color: white;
-    font-size: 18px;
+    font-size: 35px;
 }
+
+
 /* fin de slider */
+
 section {
     display: flex;
     align-content: center;
@@ -163,6 +192,7 @@ section {
     position: relative;
     z-index: 0;
 }
+
 .nosotros {
     background-color: #F2F2F2;
     display: flex;
@@ -170,58 +200,93 @@ section {
     justify-content: center;
     height: 100vh;
 }
+
 section .info {
     padding: 5%;
     display: inline-block;
     width: 40%;
 }
+
 .nosotros img {
     display: inline-block;
     width: 50%;
+    -webkit-transform: rotate(0deg) scale(.7);
+    transform: rotate(0deg) scale(.7);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
-.servicios{
+
+.nosotros img:hover {
+    -webkit-transform: rotate(15deg) scale(.7);
+    transform: rotate(15deg) scale(.7);
+}
+
+.servicios {
     text-align: center;
     background-image: url("../img/servicios/servicios.jpg");
     background-size: 100%;
     background-color: #183fa1;
     background-repeat: no-repeat;
+}
 
-}
-.servicios img{
+.servicios img {
     width: 100%;
-    
 }
+
 .services-info {
     height: 100%;
     color: white !important;
     margin-top: 25%;
     padding: 10%;
 }
-.services-info h3{
+
+.services-info h3 {
     color: white;
 }
+
 .serv-container {
     display: flex;
     flex-wrap: wrap;
 }
-.serv-icons{
+
+.serv-icons {
     background-color: #1956CE;
     border-radius: 20px;
     margin: 10px auto;
     padding: 5% 6%;
     width: 30%;
+    height: 75px;
     position: relative;
+    transition: all .7s ease;
+    cursor: pointer;
 }
-.serv-icons img{
+
+.serv-icons:hover {
+    transition: all .7s ease;
+    height: 180px;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serv-icons img {
     width: 66px;
 }
-.serv-icons h4{
+
+.serv-icons h4 {
     margin: .6em 0;
 }
-.serv-icons p{
+
+.serv-icons p {
     margin: .6em 0;
+    opacity: 0;
 }
-.serv-icons a{
+
+.serv-icons:hover p {
+    transition: all .7s ease;
+    opacity: 1;
+}
+
+.serv-icons a {
+    opacity: 0;
     font-family: fuente_bold;
     width: 15%;
     font-size: 12px;
@@ -231,17 +296,29 @@ section .info {
     background-color: white;
     border-radius: 20px;
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
 }
+
+.serv-icons:hover a {
+    transition: all .7s ease;
+    opacity: 1;
 }
+
+.serv-icons a:hover {
+    transition: all .7s ease;
+    background-color: #0e3b96;
+    color: white;
+}
+
 .conocenos {
     width: 100%;
 }
-.container{
+
+.container {
     width: 80%;
     height: 80%;
     background-color: white;
@@ -249,15 +326,18 @@ section .info {
     flex-wrap: wrap;
     margin: 100px auto;
 }
+
 .container img {
     width: 40%;
     height: 40%;
 }
-.container .info{
+
+.container .info {
     text-align: end;
     width: 50%;
 }
-.container .info a{
+
+.container .info a {
     font-size: 15px;
     text-decoration: none;
     color: #076FFB;
@@ -265,28 +345,31 @@ section .info {
     border: 2px solid #076FFB;
     border-radius: 20px;
 }
-footer{
+
+footer {
     background-color: black;
-    color:white;
+    color: white;
     display: flex;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
 }
-footer h3{
+
+footer h3 {
     font-family: fuente_tercearia;
 }
 
- .contact-form{
-    
+.contact-form {
     margin: 50px auto;
     width: 25%;
     padding: 0 5%;
 }
-.contact-form form{
+
+.contact-form form {
     font-size: 14px;
 }
-.contact-form .campo-form{
+
+.contact-form .campo-form {
     margin: 5px auto;
     padding: 7px 0;
     padding-left: 2%;
@@ -296,10 +379,12 @@ footer h3{
     border: 0px;
     border-radius: 3px;
 }
-textarea.campo-form{
+
+textarea.campo-form {
     padding-bottom: 25% !important;
     padding-right: 44% !important;
 }
+
 .btn-form {
     color: white;
     border: 2px solid white;
@@ -307,19 +392,21 @@ textarea.campo-form{
     border-radius: 20px;
     padding: 4px 30px;
 }
- .contact{
+
+.contact {
     margin: 50px auto;
     width: 25%;
     padding: 0 5%;
 }
- .footlogo{
+
+.footlogo {
     width: 20%;
     margin: auto 10px 20px -10px;
     text-align: end;
     padding: 0 5%;
-    
 }
-.footlogo img{
+
+.footlogo img {
     width: 220px;
     height: 50px;
 }

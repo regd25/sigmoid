@@ -1,33 +1,34 @@
 #btn-menu {
-  display: none;
+    display: none;
 }
+
 header label {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
 }
-@media screen and (max-width:992px ) {
-	
-}
+
+@media screen and (max-width:992px) {}
+
 @media screen and (max-width:768px) {
-	/* inicio menu */
-	header label {
-    	display: block;
-		transition: all 0.4s ease;
-		position: fixed;
-		top:0;
-		padding: 10px;
-		margin-left: 5%;
-		z-index: 1500;
-		color: white;
-		background-color: #0e3b96;
-  	}
+    /* inicio menu */
+    header label {
+        display: block;
+        transition: all 0.4s ease;
+        position: fixed;
+        top: 0;
+        padding: 10px;
+        margin-left: 5%;
+        z-index: 1500;
+        color: white;
+        background-color: #0e3b96;
+    }
     nav {
-		width: 70%;
-		height: 90%;
-		transform: translateX(-100%);
-		transition: all 0.3;
-        margin:0;
+        width: 100%;
+        height: 70%;
+        transform: translateX(-100%);
+        transition: all 0.3;
+        margin: 0;
         z-index: 25;
         top: 0;
         position: fixed;
@@ -39,82 +40,135 @@ header label {
         width: 100%;
     }
     nav div {
-		width: 100%;
-		justify-content: center;
+        width: 100%;
+        justify-content: center;
     }
     nav div ul li {
-		display:block;
-		float:none;
-		border-bottom:1px solid rgba(255,255,255, .3);
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
     }
     nav div ul li a {
         padding: 10px;
-	}
-	.menu-fixed {
-		width: 70%;
-		height: 90%;
-	}
-	#btn-menu:checked ~ .menu {
-    	transform: translateX(0%);
-	}
-	/* fin menu */	  
-	.serv-icons a {
-		width: 25%;
-	}
-	.container .info {
-		width: 100%;
-		text-align: center;
-	}
-	.container img {
-		width: 50%;
-		margin: 5% auto
-	}
-	.contact-form {
-		width: 40%;
-	}
-	.contact {
-		width: 40%;
-	}
-	.footlogo {
-		width: 100%;
-		margin: auto;
-		text-align: center;
-	}
+    }
+    .menu-fixed {
+        width: 100%;
+        height: 40%;
+    }
+    #btn-menu:checked~.menu {
+        transform: translateX(0%);
+    }
+    /* bannne effect */
+    .slider-control {
+        bottom: 10%;
+    }
+    /* fin menu */
+    .redesSociales {
+        top: 78%;
+    }
+    /* ---- servicios ---- */
+    .serv-icons {
+        width: 80%;
+        height: 250px;
+    }
+    .serv-icons:hover {
+        height: 250px;
+        transition: none;
+    }
+    .serv-icons p {
+        opacity: 1;
+    }
+    .serv-icons a {
+        opacity: 1;
+    }
+    /* ---- end servicios---- */
+    .container .info {
+        width: 100%;
+        text-align: center;
+    }
+    .container img {
+        width: 50%;
+        margin: 5% auto
+    }
+    .contact-form {
+        width: 40%;
+    }
+    .contact {
+        width: 40%;
+    }
+    .footlogo {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
 }
+
 @media screen and (max-width:576px) {
-	nav {
-		width: 80%;
-		height: 60%;
-	}
-	nav figure {
-		margin-top: 10%;
-	}
-	.menu-fixed {
-		width: 100%;
-		height: 60%;
-	}
-	.nosotros {
-		height: 100%;
-		margin-bottom: 20px
-	}
-	section .info {
-		width: 100%;
-	}
-	.nosotros img {
-		width: 100%;
-	}
-	.services-info {
-		padding: 15% 0 ;
-	}
-	.serv-icons {
-		width: 80%;
-	}
-	.contact-form {
-		width: 90%;
-		text-align: center;
-	}
-	.contact {
-		width: 100%;
-		text-align: center;
-	}
+    nav {
+        width: 100%;
+        height: 50%;
+    }
+    nav figure {
+        margin-top: 10%;
+    }
+    .menu-fixed {
+        width: 100%;
+        height: 50%;
+    }
+    /* bannne effect */
+    .slider-control {
+        bottom: 2%;
+    }
+    .redesSociales {
+        top: 75%;
+    }
+    .text-slider-wrapper {
+        font-size: 10px;
+        top: 25%
+    }
+    /* end banner */
+    .nosotros {
+        height: 100%;
+        margin-bottom: 20px
+    }
+    section .info {
+        width: 100%;
+    }
+    .nosotros img {
+        width: 100%;
+    }
+    /* ----inicio servicios---- */
+    .services-info {
+        padding: 15% 0;
+    }
+    .serv-icons {
+        width: 100%;
+        height: 250px;
+    }
+    .serv-icons:hover {
+        height: 250px;
+        transition: none;
+    }
+    .serv-icons p {
+        opacity: 1;
+    }
+    .serv-icons a {
+        opacity: 1;
+    }
+    .serv-icons:hover a {
+        transition: none;
+        opacity: none;
+    }
+    /*---- fin servicios ----*/
+    .contact-form {
+        width: 90%;
+        text-align: center;
+    }
+    .contact {
+        width: 100%;
+        text-align: center;
+    }
+    .slider-control div {
+        width: 8%;
+    }
 }

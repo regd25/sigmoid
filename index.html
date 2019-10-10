@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/efects.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -41,33 +43,34 @@
             </div>
         </nav>
     </header>
+
     <section class="inicio">
         <div class="text-slider-wrapper">
             <div class="text-slider">
                 <div class="text-slide">
-                    <h1>A blessing for <br> every skin.</h1>
+                    <h1>Te ofrecemos las herramientas necesarias <br> para desarrollar tu idea.</h1>
                 </div>
                 <div class="text-slide">
-                    <h1>The perfect mix of <br> old & new.</h1>
+                    <h1>Desarrollamos tecnología para <br> cambiar tu negocio.</h1>
                 </div>
                 <div class="text-slide">
-                    <h1>A journey over borders <br> & generations.</h1>
+                    <h1>Dale forma a tu proyecto con <br> con nuestros servicios especializados.</h1>
                 </div>
                 <div class="text-slide">
-                    <h1>Your are the <br> stylist.</h1>
+                    <h1>Capacitate en las mejores <br> tecnologías.</h1>
                 </div>
             </div>
         </div>
         <div class="slider-control">
             <div class="prev"><button type="button">
-                    <i class="fas fa-arrow-circle-left"></i>
+                    <i class="fas fa-chevron-left"></i>
                 </button></div>
             <div class="next"><button type="button">
-                    <i class="fas fa-arrow-circle-right"></i>
+                    <i class="fas fa-chevron-right"></i>
                 </button></div>
         </div>
         <div class="overlay"></div>
-        <div class="slider">
+        <div class="slider" id="slide">
 
             <div>
                 <img src="img/inicio/Simoid-slide-1.jpg">
@@ -82,17 +85,16 @@
                 <img src="img/inicio/Simoid-slide-4.jpg">
             </div>
         </div>
+        <div id="trigger1"></div>
         <div class="redesSociales">
             <a href="#">
-                Facebook <i class="fab fa-facebook-square"></i>
-            </a><br><br><br>
-            <a href="#">
-                Facebook <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-facebook-square"></i>
             </a>
         </div>
     </section>
-    <section class="nosotros" id="nosotros">
-        <div class="info">
+    <section id="nosotros" class="nosotros">
+
+        <div class="info" id="efecto1">
             <h3>NOSOTROS</h3>
             <h1>Cambiamos la forma de desarrollar proyectos</h1>
             <span>
@@ -101,7 +103,7 @@
                 compita en el mercado global.
             </span>
         </div>
-        <img src="img/nosotros/Imagen.png" alt="Grupo">
+        <img id="efecto2" src="img/nosotros/Imagen.png" alt="Grupo">
     </section>
     <section class="servicios">
 
@@ -109,31 +111,28 @@
             <h3 id="servicios">SERVICIOS</h3>
             <h1>Todo lo que necesitas en un solo lugar</h1>
             <div class="serv-container">
-                <div class="serv-icons">
+                <div class="serv-icons efecto3">
                     <img src="img/icons/Software.png" alt="Software">
                     <h4>Software</h4>
                     <p>Desarrollamos sistemas que agilicen tu negocio</p>
                     <br><a href="http://sigmoid.com.mx/software.html">Ver más</a>
                 </div>
-                <div class="serv-icons">
+                <div class="serv-icons efecto3">
                     <img src="img/icons/Hardware.png" alt="Hardware">
                     <h4>Hardware</h4>
-                    <p>Dale vida a tu proyecto, nuestros servicios de diseño y fabricación de PCBs garantizan una
-                        excelente calidad y rapidez.</p>
+                    <p>Dale vida a tu proyecto, nuestros servicios de diseño y fabricación de PCBs garantizan una excelente calidad y rapidez.</p>
                     <br><a href="http://sigmoid.com.mx/hardware.html">Ver más</a>
                 </div>
-                <div class="serv-icons">
+                <div class="serv-icons efecto3">
                     <img src="img/icons/Web.png" alt="Desarrollo web">
                     <h4>Desarrollo web</h4>
-                    <p>Una página web es el mejor camino para expandir tu negocio, te ofrecemos los mejores servicios
-                        para el desarrollo de una web con un diseño increíble e inteligente.</p>
+                    <p>Una página web es el mejor camino para expandir tu negocio, te ofrecemos los mejores servicios para el desarrollo de una web con un diseño increíble e inteligente.</p>
                     <br><a href="http://sigmoid.com.mx/web.html">Ver más</a>
                 </div>
-                <div class="serv-icons">
+                <div class="serv-icons efecto3">
                     <img src="img/icons/Capacitación.png" alt="Capacitacion">
                     <h4>Capacitación</h4>
-                    <p>Mejora tus habilidades y las de tus colaboradores. Te capacitamos para desarrollar un alto
-                        potencial en las mejores tecnologías de hoy en día.</p>
+                    <p>Mejora tus habilidades y las de tus colaboradores. Te capacitamos para desarrollar un alto potencial en las mejores tecnologías de hoy en día.</p>
                     <br><a href="http://sigmoid.com.mx/capacitacion.html">Ver más</a>
                 </div>
             </div>
@@ -141,8 +140,8 @@
     </section>
     <section class="conocenos" id="conocenos">
         <div class="container">
-            <img src="img/Contáctanos/Imagen.jpg" alt="conocenos">
-            <div class="info">
+            <img id="efecto4" src="img/Contáctanos/Imagen.jpg" alt="conocenos">
+            <div id="efecto5" class="info">
                 <h3>CONÓCENOS</h3>
                 <h1>Desata el potencial de tu idea con nosotros</h1>
                 <span>Permítenos ayudarte en tu idea, proyecto o negocio, <b>contáctanos</b>.</span>
@@ -177,8 +176,7 @@
             <p>D: Calle 36 #530B entre 71 y 73 Col. Centro Mérida, Yucatán, México</p>
             <h3>Siguenos en:</h3>
             <a href=""><img src="img/icons/Instagram.png" id="insta" alt="instagram"></a>
-            <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face"
-                    alt="facebook"></a>
+            <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face" alt="facebook"></a>
         </div>
         <div class="footlogo">
             <img src="img/Sigmoid.png" alt="logo">
@@ -187,42 +185,17 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="js/slick.js"></script>
-    <script type="text/javascript">
-        var sickPrimary = {
-            autoplay: true,
-            autoplaySpeed: 1400,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            speed: 1800,
-            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-            asNavFor: '.text-slider',
-            centerMode: true,
-            prevArrow: $('.prev'),
-            nextArrow: $('.next')
-        }
-        var sickSecondary = {
-            autoplay: true,
-            autoplaySpeed: 1400,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            speed: 1800,
-            cssEase: 'cubic-bezier(.84, 0, .08, .99)',
-            asNavFor: '.slider',
-            prevArrow: $('.prev'),
-            nextArrow: $('.next')
-        }
-        $('.slider').slick(sickPrimary);
-        $('.text-slider').slick(sickSecondary);
-
-
-    </script>
+    <script src="js/slider.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 1200,
             speedAsDuration: true
         });
     </script>
+    <script src="js/efectos.js"></script>
 </body>
 
 </html>
