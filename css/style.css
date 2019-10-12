@@ -128,62 +128,42 @@ nav div ul li a:hover {
     margin-right: auto;
 }
 
-
-/* .inicio div {
-    width: 100%;
-} */
-
 .swiper-slide {
-    /* background-position: center; */
+    text-align: center;
+    font-size: 18px;
     background-size: cover;
-}
-
-.slider {
-    height: 100vh;
-}
-
-.slider div img {
-    width: 100%;
-    height: auto;
-}
-
-.slider-control {
-    margin: 0%;
-    position: absolute;
-    z-index: 2;
-    bottom: 15%;
-    left: 10%;
-    width: 55%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
-.slider-control div {
-    width: 4%;
-}
-
-.slider-control button {
-    color: #fff;
-    background: none;
-    padding: 10px;
-    font-size: 25px;
-    border: none;
-    cursor: pointer;
-}
-
-.slider-control button:focus {
-    outline: none;
-}
-
-.text-slider-wrapper {
-    z-index: 5;
-    position: absolute;
-    top: 40%;
-    left: 15%;
-}
-
-.text-slider-wrapper h1 {
+.swiper-slide span {
+    background-color: rgba(32, 33, 36, 0.28);
     color: white;
-    /* text-shadow: -4px 3px 0 black; */
+}
+
+.swiper-button-next {
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+}
+
+.swiper-button-prev {
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 15%;
 }
 
 .redesSociales {

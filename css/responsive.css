@@ -10,12 +10,6 @@ header label {
 
 @media screen and (max-width:992px) {
     /* slider */
-    .slider {
-        height: 60vh;
-    }
-    .slider-control {
-        bottom: 10%;
-    }
     .redesSociales {
         top: 80%
     }
@@ -47,7 +41,7 @@ header label {
     }
     nav {
         width: 90%;
-        height: 40%;
+        height: 70%;
         transform: translateX(-100%);
         transition: all 0.3;
         margin: 0;
@@ -79,12 +73,11 @@ header label {
     #btn-menu:checked~.menu {
         transform: translateX(0%);
     }
-    .slider {
-        height: 40vh;
+    .swiper-container {
+        height: 100vh;
     }
-    /* bannne effect */
-    .slider-control {
-        bottom: 5%;
+    .nosotros {
+        padding: 15% 0% 15% 0%;
     }
     /* fin menu */
     .redesSociales {
@@ -145,24 +138,25 @@ header label {
         height: 50%;
     }
     /* bannne effect */
-    .slider-control {
-        bottom: 2%;
+    .swiper-container {
+        height: 70vh;
+    }
+    /*end banner*/
+    .swiper-button-next {
+        top: 90%;
+        left: 30%;
+    }
+    .swiper-button-prev {
+        top: 90%;
     }
     .redesSociales {
-        top: 75%;
-    }
-    .text-slider-wrapper h1 {
-        font-size: 14px;
-        text-shadow: none;
-        background-color: rgba(0, 0, 0, .3)
-    }
-    .slider div img {
-        height: 40vh;
+        top: 85%;
     }
     /* end banner */
     .nosotros {
         height: 100%;
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        padding: 5% 0% 5% 0%;
     }
     section .info {
         width: 100%;
