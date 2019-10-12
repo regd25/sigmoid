@@ -2,7 +2,7 @@
 
 
 //Correo de destino; donde se enviará el correo.
-$correoDestino = "tu.mail@dominio.ext";
+$correoDestino = "contacto@sigmoid.com.mx";
 
 //Texto emisor; sólo lo leerá quien reciba el contenido.
 $textoEmisor = "MIME-VERSION: 1.0\r\n";
@@ -32,5 +32,14 @@ $cuerpo .= "<b>E-mail:</b> " . $correo . "<br />";
 $cuerpo .= "<b>Comentario:</b> " . $comentario;
 
 // Envío el mensaje
-mail( $correoDestino, $asunto, $cuerpo, $textoEmisor);
+$mail_status = mail( $correoDestino, $asunto, $cuerpo, $textoEmisor);
+
+if($mail_status == true){
+    echo "<script>alert('Mensaje entregado. Gracias por contactarnos.');</script>";
+    header('Location:http://sigmoid.com.mx/');
+}else{
+    echo "<script>alert('Sorry! No se pudo enviar el correo.');</script>";
+    header('Location:http://sigmoid.com.mx/');
+}
+
 ?>

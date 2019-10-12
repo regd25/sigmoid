@@ -8,7 +8,29 @@ header label {
     display: none;
 }
 
-@media screen and (max-width:992px) {}
+@media screen and (max-width:992px) {
+    /* slider */
+    .slider {
+        height: 60vh;
+    }
+    .slider-control {
+        bottom: 10%;
+    }
+    .redesSociales {
+        top: 80%
+    }
+    /* end slider */
+    /* Servicios */
+    .serv-icons {
+        width: 35%;
+        margin: 10px;
+        padding: 6% 0;
+    }
+    .serv-icons:hover {
+        height: 240px;
+    }
+    /* end servicios */
+}
 
 @media screen and (max-width:768px) {
     /* inicio menu */
@@ -24,8 +46,8 @@ header label {
         background-color: #0e3b96;
     }
     nav {
-        width: 100%;
-        height: 70%;
+        width: 90%;
+        height: 40%;
         transform: translateX(-100%);
         transition: all 0.3;
         margin: 0;
@@ -52,19 +74,21 @@ header label {
         padding: 10px;
     }
     .menu-fixed {
-        width: 100%;
-        height: 40%;
+        height: 45%;
     }
     #btn-menu:checked~.menu {
         transform: translateX(0%);
     }
+    .slider {
+        height: 40vh;
+    }
     /* bannne effect */
     .slider-control {
-        bottom: 10%;
+        bottom: 5%;
     }
     /* fin menu */
     .redesSociales {
-        top: 78%;
+        top: 80%;
     }
     /* ---- servicios ---- */
     .serv-icons {
@@ -82,6 +106,11 @@ header label {
         opacity: 1;
     }
     /* ---- end servicios---- */
+    /* nosotros */
+    .nosotros {
+        height: 70vh;
+    }
+    /* end nosotros */
     .container .info {
         width: 100%;
         text-align: center;
@@ -105,14 +134,14 @@ header label {
 
 @media screen and (max-width:576px) {
     nav {
-        width: 100%;
+        width: 95%;
         height: 50%;
     }
     nav figure {
         margin-top: 10%;
     }
     .menu-fixed {
-        width: 100%;
+        width: 95%;
         height: 50%;
     }
     /* bannne effect */
@@ -122,9 +151,13 @@ header label {
     .redesSociales {
         top: 75%;
     }
-    .text-slider-wrapper {
-        font-size: 10px;
-        top: 25%
+    .text-slider-wrapper h1 {
+        font-size: 14px;
+        text-shadow: none;
+        background-color: rgba(0, 0, 0, .3)
+    }
+    .slider div img {
+        height: 40vh;
     }
     /* end banner */
     .nosotros {
@@ -142,7 +175,7 @@ header label {
         padding: 15% 0;
     }
     .serv-icons {
-        width: 100%;
+        width: 90%;
         height: 250px;
     }
     .serv-icons:hover {

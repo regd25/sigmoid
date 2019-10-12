@@ -14,11 +14,11 @@
           
           #efecto1.visible {
               opacity: 1;
-              -webkit-transform: translateX(40px);
-              -moz-transform: translateX(40px);
-              -ms-transform: translateX(40px);
-              -o-transform: translateX(40px);
-              transform: translateX(40px);
+              -webkit-transform: translateX(30px);
+              -moz-transform: translateX(30px);
+              -ms-transform: translateX(30px);
+              -o-transform: translateX(30px);
+              transform: translateX(30px);
           }
           
           #efecto2 {
@@ -37,11 +37,11 @@
           
           #efecto2.visible {
               opacity: 1;
-              -webkit-transform: translateX(-50px);
-              -moz-transform: translateX(-50px);
-              -ms-transform: translateX(-50px);
-              -o-transform: translateX(-50px);
-              transform: translateX(-50px);
+              -webkit-transform: translateX(-30px);
+              -moz-transform: translateX(-30px);
+              -ms-transform: translateX(-30px);
+              -o-transform: translateX(-30px);
+              transform: translateX(-30px);
           }
           
           .efecto3 {
@@ -96,11 +96,11 @@
           
           #efecto4.visible {
               opacity: 1;
-              -webkit-transform: translateX(40px);
-              -moz-transform: translateX(40px);
-              -ms-transform: translateX(40px);
-              -o-transform: translateX(40px);
-              transform: translateX(40px);
+              -webkit-transform: translateX(30px);
+              -moz-transform: translateX(30px);
+              -ms-transform: translateX(30px);
+              -o-transform: translateX(30px);
+              transform: translateX(30px);
           }
           
           #efecto5 {
@@ -119,11 +119,30 @@
           
           #efecto5.visible {
               opacity: 1;
-              -webkit-transform: translateX(-50px);
-              -moz-transform: translateX(-50px);
-              -ms-transform: translateX(-50px);
-              -o-transform: translateX(-50px);
-              transform: translateX(-50px);
+              -webkit-transform: translateX(-30px);
+              -moz-transform: translateX(-30px);
+              -ms-transform: translateX(-30px);
+              -o-transform: translateX(-30px);
+              transform: translateX(-30px);
+          }
+          
+          @media screen and (max-width:992px) {
+              #efecto4.visible {
+                  opacity: 1;
+                  -webkit-transform: translateX(20px);
+                  -moz-transform: translateX(20px);
+                  -ms-transform: translateX(20px);
+                  -o-transform: translateX(20px);
+                  transform: translateX(20px);
+              }
+              #efecto5.visible {
+                  opacity: 1;
+                  -webkit-transform: translateX(-20px);
+                  -moz-transform: translateX(-20px);
+                  -ms-transform: translateX(-20px);
+                  -o-transform: translateX(-20px);
+                  transform: translateX(-20px);
+              }
           }
           
           @media screen and (max-width:768px) {
@@ -140,34 +159,37 @@
                   -webkit-transform: translateX(-10px);
                   -moz-transform: translateX(-10px);
                   -ms-transform: translateX(-10px);
-                  -o-transform: translateX(-20px);
+                  -o-transform: translateX(-10px);
                   transform: translateX(-10px);
               }
+              .efecto3:nth-child(1) {
+                  margin-left: 10%;
+              }
               .efecto3:nth-child(2) {
-                  margin-left: 20px;
+                  margin-top: 100px;
+                  margin-left: 10%;
               }
               .efecto3:nth-child(3) {
-                  margin-top: 0;
+                  margin-left: 10%;
               }
               .efecto3:nth-child(4) {
-                  margin-top: 0px;
-                  margin-left: 20px;
+                  margin-left: 10%;
               }
               #efecto4.visible {
                   opacity: 1;
-                  -webkit-transform: translateX(10px);
-                  -moz-transform: translateX(10px);
-                  -ms-transform: translateX(10px);
-                  -o-transform: translateX(10px);
-                  transform: translateX(10px);
+                  -webkit-transform: translateX(5px);
+                  -moz-transform: translateX(5px);
+                  -ms-transform: translateX(5px);
+                  -o-transform: translateX(5px);
+                  transform: translateX(5px);
               }
               #efecto5.visible {
                   opacity: 1;
-                  -webkit-transform: translateX(0px);
-                  -moz-transform: translateX(0px);
-                  -ms-transform: translateX(0px);
-                  -o-transform: translateX(0px);
-                  transform: translateX(0px);
+                  -webkit-transform: translateX(5px);
+                  -moz-transform: translateX(5px);
+                  -ms-transform: translateX(5px);
+                  -o-transform: translateX(5px);
+                  transform: translateX(5px);
               }
           }
           
@@ -188,10 +210,16 @@
                   -o-transform: translateX(-20px);
                   transform: translateX(-10px);
               }
+              .efecto3:nth-child(1) {
+                  margin-left: 5%;
+              }
               .efecto3:nth-child(2) {
-                  margin-left: 0px;
+                  margin-left: 5%;
+              }
+              .efecto3:nth-child(3) {
+                  margin-left: 5%;
               }
               .efecto3:nth-child(4) {
-                  margin-left: 0px;
+                  margin-left: 5%;
               }
           }

@@ -93,7 +93,6 @@ nav div ul li a {
 }
 
 nav div ul li a:hover {
-    /* background-color: #076FFB; */
     border-bottom: 5px white solid;
 }
 
@@ -123,8 +122,13 @@ nav div ul li a:hover {
     width: 100%;
 }
 
-.inicio div img {
+.slider {
+    height: 100vh;
+}
+
+.slider div img {
     width: 100%;
+    height: auto;
 }
 
 .slider-control {
@@ -157,13 +161,13 @@ nav div ul li a:hover {
 .text-slider-wrapper {
     z-index: 5;
     position: absolute;
-    /* width: 10%; */
     top: 40%;
     left: 15%;
 }
 
 .text-slider-wrapper h1 {
     color: white;
+    /* text-shadow: -4px 3px 0 black; */
 }
 
 .redesSociales {
