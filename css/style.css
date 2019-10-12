@@ -116,10 +116,26 @@ nav div ul li a:hover {
     position: relative;
     z-index: 0;
     width: 100%;
+    height: 100%;
 }
 
-.inicio div {
+.swiper-container {
+    position: relative;
+    z-index: 0;
     width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* .inicio div {
+    width: 100%;
+} */
+
+.swiper-slide {
+    /* background-position: center; */
+    background-size: cover;
 }
 
 .slider {

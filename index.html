@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sigmoid</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/efects.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 
@@ -44,8 +45,21 @@
         </nav>
     </header>
 
-    <section class="inicio">
-        <div class="text-slider-wrapper">
+    <!--  <section class="inicio"> -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(./img/inicio/Simoid-slide-1.jpg)"><span>
+                    Se parte de nosostros
+                </span> </div>
+            <div class="swiper-slide" style="background-image:url(./img/inicio/Simoid-slide-2.jpg)">Slide 2</div>
+            <div class="swiper-slide" style="background-image:url(./img/inicio/Simoid-slide-3.jpg)">Slide 3</div>
+        </div>
+        <!-- <div class="control">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div> -->
+    </div>
+    <!-- <div class="text-slider-wrapper">
             <div class="text-slider">
                 <div class="text-slide">
                     <h1>Te ofrecemos las herramientas necesarias <br> para desarrollar tu idea.</h1>
@@ -60,17 +74,17 @@
                     <h1>Capacitate en las mejores <br> tecnologías.</h1>
                 </div>
             </div>
-        </div>
-        <div class="slider-control">
+        </div> -->
+    <!-- <div class="slider-control">
             <div class="prev"><button type="button">
                     <i class="fas fa-chevron-left"></i>
                 </button></div>
             <div class="next"><button type="button">
                     <i class="fas fa-chevron-right"></i>
                 </button></div>
-        </div>
-        <div class="overlay"></div>
-        <div class="slider" id="slide">
+        </div> -->
+    <!-- <div class="overlay"></div> -->
+    <!-- <div class="slider" id="slide">
             <div>
                 <img src="img/inicio/Simoid-slide-1.jpg">
             </div>
@@ -83,14 +97,15 @@
             <div>
                 <img src="img/inicio/Simoid-slide-4.jpg">
             </div>
-        </div>
-        <div id="trigger1"></div>
+        </div> -->
+    <!-- <div id="trigger1"></div>
         <div class="redesSociales">
             <a href="#">
                 <i class="fab fa-facebook-square"></i>
             </a>
-        </div>
-    </section>
+        </div> -->
+    <!--     </section> -->
+    <br><br><br><br><br>
     <section id="nosotros" class="nosotros">
 
         <div class="info" id="efecto1">
@@ -186,14 +201,16 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="js/slick.js"></script>
+    <!-- <script src="js/slick.js"></script>
     <script src="js/slider.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
             speed: 1200,
             speedAsDuration: true
         });
-    </script>
+    </script> -->
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/efectos.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/jquery.form.js"></script>
