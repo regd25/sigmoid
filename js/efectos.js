@@ -3,7 +3,6 @@ var controller = new ScrollMagic.Controller();
 new ScrollMagic.Scene({
         triggerElement: "#trigger1",
         triggerHook: 0.9,
-        duration: "105%",
         offset: 50
     })
     .setClassToggle("#efecto1", "visible")
@@ -12,7 +11,6 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
         triggerElement: "#trigger1",
         offset: 50,
-        duration: "105%",
         triggerHook: 0.9,
     })
     .setClassToggle("#efecto2", "visible")
@@ -32,7 +30,6 @@ for (var i = 0; i < revealElements.length; i++) {
 new ScrollMagic.Scene({
         triggerElement: "#conocenos",
         triggerHook: 0.9,
-        duration: "110%",
         offset: 50
     })
     .setClassToggle("#efecto4", "visible")
@@ -41,7 +38,6 @@ new ScrollMagic.Scene({
 new ScrollMagic.Scene({
         triggerElement: "#conocenos",
         offset: 50,
-        duration: "110%",
         triggerHook: 0.9,
     })
     .setClassToggle("#efecto5", "visible")

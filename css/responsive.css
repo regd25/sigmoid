@@ -41,8 +41,8 @@ header label {
         background-color: #0e3b96;
     }
     nav {
-        width: 90%;
-        height: 70%;
+        width: 100%;
+        height: 72%;
         transform: translateX(-100%);
         transition: all 0.3;
         margin: 0;
@@ -69,7 +69,7 @@ header label {
         padding: 10px;
     }
     .menu-fixed {
-        height: 45%;
+        height: 72%;
     }
     #btn-menu:checked~.menu {
         transform: translateX(0%);
@@ -129,22 +129,21 @@ header label {
 
 @media screen and (max-width:576px) {
     nav {
-        width: 95%;
-        height: 50%;
+        width: 98%;
+        height: 65%;
     }
     nav figure {
         margin-top: 10%;
     }
     .menu-fixed {
-        width: 95%;
-        height: 50%;
+        width: 98%;
+        height: 65%;
     }
     /* bannne effect */
     .swiper-container {
         height: 70vh;
     }
-
-    .swiper-slide span{
+    .swiper-slide span {
         margin-bottom: 20%;
         width: 100%;
     }
