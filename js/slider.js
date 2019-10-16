@@ -2,15 +2,16 @@ var swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     effect: 'coverflow',
     coverflowEffect: {
-        rotate: 50,
+        rotate: 0,
         stretch: 150,
-        depth: 100,
+        depth: 0,
         modifier: 4,
-        slideShadows: false,
+        slideShadows: true,
     },
     loop: true,
+    parallax: true,
     autoplay: {
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
     },
     navigation: {

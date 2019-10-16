@@ -140,30 +140,33 @@ nav div ul li a:hover {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    background-position: center;
 }
 
 .swiper-slide span {
-    background-color: rgba(32, 33, 36, 0.28);
     color: white;
+    width: 50%;
+    
 }
 
 .swiper-button-next {
     color: white;
     position: absolute;
-    top: 80%;
-    left: 25%;
+    top: 90%;
+    left: 15%;
+    width: 36px;
 }
 
 .swiper-button-prev {
     color: white;
     position: absolute;
-    top: 80%;
-    left: 15%;
+    top: 90%;
+    left: 5%;
 }
 
 .redesSociales {
@@ -171,8 +174,8 @@ nav div ul li a:hover {
     position: absolute;
     height: 100vh;
     width: 20%;
-    top: 80%;
-    left: 85%;
+    top: 90%;
+    left: 95%;
 }
 
 .redesSociales a {
@@ -223,20 +226,18 @@ section .info {
 
 .servicios {
     text-align: center;
-    background-image: url("../img/servicios/servicios.jpg");
     background-size: 100%;
-    background-color: #183fa1;
+    background: radial-gradient(ellipse at center, rgba(43,84,173,1) 0%, rgba(24,63,161,1) 45%, rgba(24,63,161,1) 100%);
     background-repeat: no-repeat;
 }
 
 .servicios img {
-    width: 100%;
+    width: 50%;
 }
 
 .services-info {
     height: 100%;
     color: white !important;
-    margin-top: 25%;
     padding: 10%;
 }
 

@@ -11,7 +11,8 @@ header label {
 @media screen and (max-width:992px) {
     /* slider */
     .redesSociales {
-        top: 80%
+        top: 85%;
+        left: 90%;
     }
     /* end slider */
     /* Servicios */
@@ -81,7 +82,8 @@ header label {
     }
     /* fin menu */
     .redesSociales {
-        top: 80%;
+        top: 85%;
+        left: 90%;
     }
     /* ---- servicios ---- */
     .serv-icons {
@@ -141,16 +143,15 @@ header label {
     .swiper-container {
         height: 70vh;
     }
+
+    .swiper-slide span{
+        margin-bottom: 20%;
+        width: 100%;
+    }
     /*end banner*/
-    .swiper-button-next {
-        top: 90%;
-        left: 30%;
-    }
-    .swiper-button-prev {
-        top: 90%;
-    }
     .redesSociales {
         top: 85%;
+        left: 80%;
     }
     /* end banner */
     .nosotros {
