@@ -21,7 +21,8 @@ for (var i = 0; i < revealElements.length; i++) {
     new ScrollMagic.Scene({
             triggerElement: revealElements[i],
             offset: 50,
-            triggerHook: 0.9,
+            duration: "10000%",
+            triggerHook: 1.9,
         })
         .setClassToggle(revealElements[i], "visible")
         .addTo(controller);

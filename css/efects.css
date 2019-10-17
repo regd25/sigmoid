@@ -60,12 +60,20 @@
           
           .efecto3.visible {
               opacity: 1;
-              -webkit-transform: none;
-              -moz-transform: none;
-              -ms-transform: none;
-              -o-transform: none;
-              transform: none;
+              -webkit-transform: translateX(-30px);
+              -moz-transform: translateX(-30px);
+              -ms-transform: translateX(-30px);
+              -o-transform: translateX(-30px);
+              transform: translateX(-30px);
           }
+          /* .efecto3.visible {
+                opacity: 1;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+            } */
           
           .efecto3:nth-child(2) {
               margin-left: 150px;
