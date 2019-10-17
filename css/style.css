@@ -61,7 +61,14 @@ nav {
     text-align: center;
     justify-content: space-around;
 }
-
+.other-head{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    background-color: #0e3b96;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
 nav figure {
     width: 30%;
 }

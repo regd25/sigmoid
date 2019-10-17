@@ -3,10 +3,10 @@ var swiper = new Swiper('.swiper-container', {
     effect: 'coverflow',
     coverflowEffect: {
         rotate: 0,
-        stretch: 150,
+        stretch: 0,
         depth: 0,
         modifier: 4,
-        slideShadows: true,
+        slideShadows: false,
     },
     loop: true,
     parallax: true,
