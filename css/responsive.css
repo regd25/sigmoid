@@ -2,10 +2,13 @@
     display: none;
 }
 
+.nav-sandwich {
+    display: none;
+}
+
 header label {
     font-size: 30px;
     cursor: pointer;
-    display: none;
 }
 
 @media screen and (max-width:992px) {
@@ -28,55 +31,34 @@ header label {
 }
 
 @media screen and (max-width:768px) {
-    /* inicio menu */
-    header label {
-        display: block;
-        transition: all 0.4s ease;
-        position: fixed;
-        top: 0;
-        padding: 10px;
-        margin-left: 5%;
-        z-index: 1500;
-        color: white;
+    header {
         background-color: #0e3b96;
     }
-    nav {
-        width: 100%;
-        height: 72%;
-        transform: translateX(-100%);
-        transition: all 0.3;
-        margin: 0;
-        z-index: 25;
-        top: 0;
-        position: fixed;
-        align-items: center;
-        background-color: #0e3b96;
-        flex-direction: column;
-    }
-    nav figure {
-        width: 100%;
-    }
-    nav div {
-        width: 100%;
-        justify-content: center;
-    }
-    nav div ul li {
-        display: block;
-        float: none;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
-    }
-    nav div ul li a {
-        padding: 10px;
-    }
-    .menu-fixed {
-        height: 72%;
-    }
-    #btn-menu:checked~.menu {
-        transform: translateX(0%);
-    }
+    /* ---- ---- swiper ---- ---- */
     .swiper-container {
         height: 100vh;
     }
+    .swiper-slide span {
+        top: 10%;
+        font-size: 22px;
+    }
+    .swiper-slide-img1 {
+        left: 2%;
+        top: 25%;
+    }
+    .swiper-slide-img2 {
+        top: 25%;
+    }
+    .swiper-slide-img3 {
+        top: 20%;
+    }
+    .swiper-slide-img4 {
+        top: 30%;
+    }
+    .swiper-slide span {
+        top: 30%;
+    }
+    /* ---- ---- end swiper ---- ---- */
     .nosotros {
         padding: 15% 0% 15% 0%;
     }
@@ -128,28 +110,42 @@ header label {
 }
 
 @media screen and (max-width:576px) {
-    nav {
-        width: 98%;
-        height: 65%;
-    }
-    nav figure {
-        margin-top: 10%;
-    }
-    .menu-fixed {
-        width: 98%;
-        height: 65%;
-    }
     /* bannne effect */
     .swiper-container {
-        height: 80vh;
+        height: 90vh;
+    }
+    .swiper-slide-img1 {
+        width: 90%;
+        left: 5%;
+    }
+    .swiper-slide-img2 {
+        width: 55%;
+        top: 12%;
+        left: 22.5%;
+    }
+    .swiper-slide-img3 {
+        width: 90%;
+        top: 0%;
+        left: 5%;
+    }
+    .swiper-slide-img4 {
+        width: 90%;
+        top: 25%;
+        left: 5%;
     }
     .swiper-slide span {
         margin-bottom: 20%;
-        width: 100%;
+        width: 90%;
+        right: 0;
+        top: 65%;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     /*end banner*/
     .redesSociales {
-        top: 85%;
+        top: 86%;
         left: 80%;
     }
     /* end banner */

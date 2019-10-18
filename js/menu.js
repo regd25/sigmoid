@@ -1,13 +1,19 @@
-$(document).ready(function () {
-    var altura = $('.menu').offset().top;
+$(document).ready(function() {
+    var altura = $('.header-nav').offset().top;
 
-    $(window).on('scroll', function () {
+    $(window).on('scroll', function() {
         if ($(window).scrollTop() > altura) {
-            $('.menu').addClass('menu-fixed');
+            $('.header-nav').addClass('menu-fixed');
         } else {
-            $('.menu').removeClass('menu-fixed');
+            $('.header-nav').removeClass('menu-fixed');
         }
     });
 });
 
+function cambiarClase() {
+    let siteNav = document.getElementById('site-nav');
+    siteNav.classList.toggle('site-nav-open');
+    let menuOpen = document.getElementById('menu-toggle');
+    menuOpen.classList.toggle('menu-open');
 
+}

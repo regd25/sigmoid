@@ -18,47 +18,56 @@
 </head>
 
 <body>
-    <header>
-        <input type="checkbox" id="btn-menu" />
-        <label for="btn-menu"><i class="fa fa-bars"></i></label>
-        <nav class="menu">
-            <figure>
-                <img src="img/Sigmoid.png" id="logo">
-            </figure>
-            <div>
-                <ul>
-                    <li>
-                        <a data-scroll href="#top">INICIO</a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#nosotros">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#servicios">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#conocenos">CONÓCENOS</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="header-nav">
+        <figure class="logo">
+            <img src="img/Sigmoid.png" id="logo">
+        </figure>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li>
+                    <a onClick="cambiarClase()" data-scroll href="#top">INICIO</a>
+                </li>
+                <li>
+                    <a onClick="cambiarClase()" data-scroll href="#nosotros">NOSOTROS</a>
+                </li>
+                <li>
+                    <a onClick="cambiarClase()" data-scroll href="#servicios">SERVICIOS</a>
+                </li>
+                <li>
+                    <a onClick="cambiarClase()" data-scroll href="#conocenos">CONÓCENOS</a>
+                </li>
+            </ul>
         </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
     </header>
 
     <!--  <section class="inicio"> -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image:url(./img/inicio/slide-1.png)"><span>
-                    <h2>Te ofrecemos las herramientas necesarias para desarrollar tu idea.</h2>
+            <div class="swiper-slide" style="background-image:url(./img/inicio/slide1.png)">
+                <img class="swiper-slide-img1" src="img/inicio/Capa6.png">
+                <span>
+                    <h2>Te ofrecemos las herramientas necesarias para potencializar tu negocio.</h2>
                 </span> </div>
-            <div class="swiper-slide" style="background-image:url(./img/inicio/slide-2.png)"><span>
-                <h2>Desarrollamos tecnología para cambiar tu negocio.</h2>
+            <div class="swiper-slide" style="background-image:url(./img/inicio/slide2.png)">
+                <img class="swiper-slide-img2" src="img/inicio/Status Bar _ White.png">
+                <span>
+                
+                <h2>Expande el alcance de tu negocio o proyecto hasta cualquier plataforma.</h2>
             </span></div>
-            <div class="swiper-slide" style="background-image:url(./img/inicio/slide-3.png)"><span>
-                <h2>Dale forma a tu proyecto con con nuestros servicios especializados.</h2>
+            <div class="swiper-slide" style="background-image:url(./img/inicio/slide3.png)">
+                <img class="swiper-slide-img4" src="img/inicio/EstacionPCBHD.png">
+                <span>
+                <h2>Manufactura tu diseño PCB con altos estandares de calidad y producción.</h2>
             </span></div>
-            <div class="swiper-slide" style="background-image:url(./img/inicio/slide-4.png)"><span>
-                    <h2>Capacitate en las mejores tecnologías.</h2>
-                </span></div>
+            <div class="swiper-slide" style="background-image:url(./img/inicio/slide4.png)">
+                <img class="swiper-slide-img3" src="img/inicio/gateway.png">
+                <span>
+                <h2>Te ayudamos a convertir tu idea de proyecto en un prototipo funcional.</h2>
+                </span>
+            </div>
         </div>
         <div class="control">
             <div class="swiper-button-next"></div>
@@ -93,26 +102,26 @@
                 <div class="serv-icons efecto3">
                     <img src="img/icons/Software.png" alt="Software">
                     <h4>Software</h4>
-                    <p>Desarrollamos sistemas que agilicen tu negocio</p>
-                    <br><a href="http://sigmoid.com.mx/software.html">Ver más</a>
+                    <p>Te acercamos a las tendendecias tecnologicas que se adaptan a tu negocio, acerca tu empresa a la trasformacion digital</p>
+                    <br><a href="software.html">Ver más</a>
                 </div>
                 <div class="serv-icons efecto3">
                     <img src="img/icons/Hardware.png" alt="Hardware">
                     <h4>Hardware</h4>
-                    <p>Dale vida a tu proyecto, nuestros servicios de diseño y fabricación de PCBs garantizan una excelente calidad y rapidez.</p>
-                    <br><a href="http://sigmoid.com.mx/hardware.html">Ver más</a>
+                    <p>Dale vida a tu proyecto, nuestros servicios de prototipado y fabricación de PCBs garantizan una excelente calidad y rapidez.</p>
+                    <br><a href="hardware.html">Ver más</a>
                 </div>
                 <div class="serv-icons efecto3">
                     <img src="img/icons/Web.png" alt="Desarrollo web">
                     <h4>Desarrollo web</h4>
-                    <p>Una página web es el mejor camino para expandir tu negocio, te ofrecemos los mejores servicios para el desarrollo de una web con un diseño increíble e inteligente.</p>
-                    <br><a href="http://sigmoid.com.mx/web.html">Ver más</a>
+                    <p>Una página web es el mejor camino para expandir tu negocio, te ofrecemos los mejores servicios con un diseño increíble e inteligente.</p>
+                    <br><a href="web.html">Ver más</a>
                 </div>
                 <div class="serv-icons efecto3">
                     <img src="img/icons/Capacitación.png" alt="Capacitacion">
                     <h4>Capacitación</h4>
-                    <p>Mejora tus habilidades y las de tus colaboradores. Te capacitamos para desarrollar un alto potencial en las mejores tecnologías de hoy en día.</p>
-                    <br><a href="http://sigmoid.com.mx/capacitacion.html">Ver más</a>
+                    <p>Mejora tus habilidades y las de tus colaboradores, te capacitamos para desarrollar un alto potencial en lo ultimo de la tecnologia</p>
+                    <br><a href="capacitacion.html">Ver más</a>
                 </div>
             </div>
         </div>
