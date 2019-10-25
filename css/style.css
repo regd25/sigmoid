@@ -456,73 +456,223 @@ section .info {
 
 /* ----------------------web--------------------------- */
 
-.intro article {
-    width: 100%;
-    height: 650px;
-    /* margin-top: 4%; */
-    background-color: #076FFB;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-radius: 5px 0px 15px 16px;
-    justify-content: center;
-    align-items: center;
-    /* align-content: flex-start; */
-}
-
-.intro article h1 {
-    width: 100%;
-    text-align: center;
-    z-index: 2;
-}
-
-.intro article h3 {
-    width: 100%;
-    color: white;
-    text-align: center;
-    z-index: 2;
-}
-
-.intro article p {
-    z-index: 2;
-}
-
-.circulo_intro {
-    position: absolute;
-    top: 60%;
-    left: 0%;
-    height: 95px;
-}
-
-.verde_intro {
-    position: absolute;
-    z-index: 1;
-    top: 40%;
-    right: 5%;
-    width: 255px;
-}
-
-.posicionamiento {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.79);
-    position: absolute;
-}
-
-.posicionamiento .data {
-    position: absolute;
-    background-color: white;
-    height: 50%;
-    width: 70%;
-    z-index: 3;
-    transform: skewX(-15deg);
-    top: 5%;
-}
-
 
 /* --------------------end web------------------------- */
+
+
+/* --------------------- software ---------------------- */
+
+.sof-banner {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/inicio/slide1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sof-banner img {
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    left: 5%;
+}
+
+.sof-banner span {
+    color: white;
+    width: 40%;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    font-size: 30px;
+}
+
+.sof-banner i {
+    color: white;
+    position: absolute;
+    top: 65%;
+    right: 20%;
+    font-size: 70px;
+}
+
+.sof-sistemas {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: flex-start;
+}
+
+.sof-sistemas h3 {
+    text-align: center;
+    width: 100%;
+}
+
+.sof-sistemas h1 {
+    text-align: center;
+    width: 60%;
+}
+
+.sof-sistemas-img1 {
+    position: absolute;
+    top: 24%;
+    left: 12%;
+    z-index: 0;
+    width: 140px;
+    height: 60px;
+}
+
+.sof-sistemas-img2 {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 230px;
+    height: 200px;
+    z-index: 0
+}
+
+.sof-sistemas section {
+    width: 100%;
+    height: 390px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sof-sistemas section article {
+    background-color: white;
+    width: 25%;
+    height: 70%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.sof-sistemas section article img {
+    width: 20%;
+    margin-top: 2%;
+}
+
+.sof-sistemas section article a {
+    margin-top: 5%;
+    font-size: 15px;
+    text-decoration: none;
+    color: #076FFB;
+    padding: 5px 20px;
+    border: 2px solid #076FFB;
+    border-radius: 20px;
+}
+
+.sof-apps {
+    width: 100%;
+    height: 100vh;
+    background-color: #1956CE;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sof-apps figure {
+    width: 45%;
+    height: 55%;
+    margin: 0;
+}
+
+.sof-apps figure img {
+    width: 100%;
+}
+
+.sof-apps article {
+    width: 54%;
+}
+
+.sof-app-data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sof-app-data figure {
+    width: 90px;
+    height: 90px;
+    background-color: #0e3b96;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sof-app-data figure .img-data {
+    width: 70%;
+}
+
+.sof-app-data div {
+    width: 70%;
+}
+
+
+/* --------------------- end software ---------------------- */
+
+
+/* --------------------- hardware -------------------------- */
+
+.har-banner {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/inicio/slide5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.har-banner-tex {
+    width: 40%;
+    height: 45%;
+    /* border: 1px red solid; */
+    text-align: center;
+    color: white;
+}
+
+.har-banner-cotizador {
+    width: 55%;
+    height: 75%;
+}
+
+.har-diseno {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: flex-start;
+}
+
+.har-entregables {
+    width: 100%;
+    height: 100vh;
+    background-color: #0098cd;
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.har-store {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: flex-start;
+}
+
+
+/*--------------------- end hardware -----------------------*/
 
 
 /* ------ FOOTER  ----------*/

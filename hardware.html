@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +12,296 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/efects.css">
+    <link rel="stylesheet" href="css/responsive-tabs.css">
+    <link rel="stylesheet" href="css/style-tabs.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+    <!-- jQuery Modal -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 </head>
+
 <body>
-    <header class="other-head">
-        <input type="checkbox" id="btn-menu" />
-        <label for="btn-menu"><i class="fa fa-bars"></i></label>
-        <nav class="menu">
-            <figure>
-                <img src="img/Sigmoid.png" id="logo">
-            </figure>
-            <div>
-                <ul>
-                    <li>
-                        <a data-scroll href="#top">INICIO</a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#nosotros">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#servicios">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#conocenos">CONÓCENOS</a>
-                    </li>
-                </ul>
-            </div>
+    <header class="header-nav">
+        <figure class="logo">
+            <img src="img/Sigmoid.png" id="logo">
+        </figure>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li>
+                    <a onClick="cambiarClase()" data-scroll href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a onClick="cambiarClase()" data-scroll href="#servicios">SERVICIOS</a>
+                </li>
+                <li>
+                    <a onClick="cambiarClase()" data-scroll href="#conocenos">CONÓCENOS</a>
+                </li>
+            </ul>
         </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
     </header>
+    <section class="har-banner">
+        <article class="har-banner-tex">
+            <h1>Diseño y fabricación PCB</h1>
+            <h2>Diseño a partir de un esquemático y <br> fabricación con acabado profesional</h2>
+            <br>
+            <h2>Elige la modalidad que mas se adecue <br> a tu proyecto</h2>
+            <br>
+            <h2><b>¡Prueba nuestro cotizador!</b></h2>
+        </article>
+        <article class="har-banner-cotizador">
+            <!--Horizontal Tab-->
+            <div id="horizontalTab">
+                <ul>
+                    <li><a href="#tab-1">PCB Rapido</a></li>
+                    <li><a href="#tab-2">PCB Profesional</a></li>
+                    <li><a href="#tab-3">Diseño</a></li>
+                </ul>
+
+                <div class="pcb-rapido" id="tab-1">
+                    <div class="pcb-rapido-conteiner">
+                        <article class="pcb-rapido-left">
+                            <label>Dimension</label>
+                            <input type="text"> x
+                            <input type="text"> mm
+                            <label>Cantidad</label>
+                            <input type="number"> pzas
+                            <label>Observaciones</label>
+                            <textarea></textarea>
+                            <label>Sube tu proyecto Eagle en zip o archivo .BRD</label>
+                            <label for="file-upload" class="custom-file-upload">Explorar</label><br>
+                            <input id="file-upload" type="file">
+
+                            <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
+                        </article>
+                        <article class="pcb-rapido-right">
+                            <div class="pcb-rapido-right-info">
+                                <figure>
+                                    <img src="img/icons/Forma 1 copia 2.png">
+                                </figure>
+                                <article>
+                                    <p>Espacio mínimo entre pistas 0.4 mm.</p>
+                                </article>
+                            </div>
+                            <div class="pcb-rapido-right-info">
+                                <figure>
+                                    <img src="img/icons/Forma 1 copia 4.png">
+                                </figure>
+                                <article>
+                                    <p>Tamaño mínimo de drill 0.8 mm.</p>
+                                </article>
+                            </div>
+                            <div class="pcb-rapido-right-info">
+                                <figure>
+                                    <img src="img/icons/Forma 1 copia 5.png">
+                                </figure>
+                                <article>
+                                    <p>Tamaño máximo de PCB 150 mm x 250 mm..</p>
+                                </article>
+                            </div>
+                            <div class="pcb-rapido-right-info">
+                                <figure>
+                                    <img src="img/icons/pcb_346692.png">
+                                </figure>
+                                <article>
+                                    <p>1 cara.</p>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="pcb-rapido" id="tab-2">
+                    <div class="pcb-rapido-conteiner">
+                        <article class="pcb-rapido-left">
+                            <label>Dimension</label>
+                            <input type="text"> x
+                            <input type="text"> mm
+                            <label>Cantidad</label>
+                            <input type="number"> pzas
+                            <label>Observaciones</label>
+                            <textarea></textarea>
+                            <label>Sube tu proyecto Eagle en zip o archivo .BRD</label>
+                            <label for="file-upload" class="custom-file-upload">Explorar</label><br>
+                            <input id="file-upload" type="file">
+
+                            <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
+                        </article>
+                        <article class="pcb-rapido-right">
+                            <div class="pcb-rapido-right-info">
+                                <figure>
+                                    <img src="img/icons/Forma 1 copia 2.png">
+                                </figure>
+                                <article>
+                                    <p>Espacio mínimo entre pistas 0.4 mm.</p>
+                                </article>
+                            </div>
+                            <div class="pcb-rapido-right-info">
+                                <figure>
+                                    <img src="img/icons/Forma 1 copia 4.png">
+                                </figure>
+                                <article>
+                                    <p>Tamaño mínimo de drill 0.8 mm.</p>
+                                </article>
+                            </div>
+                            <div class="pcb-rapido-right-info">
+                                <figure>
+                                    <img src="img/icons/Forma 1 copia 5.png">
+                                </figure>
+                                <article>
+                                    <p>Tamaño máximo de PCB 150 mm x 250 mm..</p>
+                                </article>
+                            </div>
+                            <div class="pcb-rapido-right-info">
+                                <figure>
+                                    <img src="img/icons/pcb_346692.png">
+                                </figure>
+                                <article>
+                                    <p>1 cara.</p>
+                                </article>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div id="tab-3">
+                    <p>Mauris facilisis elit ut sem eleifend accumsan molestie sit amet dolor. Pellentesque dapibus arcu eu lorem laoreet, vitae cursus metus mattis. Nullam eget porta enim, eu rutrum magna. Duis quis tincidunt sem, sit amet faucibus magna.
+                        Integer commodo, turpis consequat fermentum egestas, leo odio posuere dui, elementum placerat eros erat id augue. Nullam at eros eget urna vestibulum malesuada vitae eu mauris. Aliquam interdum rhoncus velit, quis scelerisque leo
+                        viverra non. Suspendisse id feugiat dui. Nulla in aliquet leo. Proin vel magna sed est gravida rhoncus. Mauris lobortis condimentum nibh, vitae bibendum tortor vehicula ac. Curabitur posuere arcu eros.</p>
+                </div>
+                <div id="ex1" class="modal" style="max-width: 900px; padding: 5px 25px;">
+                    <section class="form-modal">
+                        <h4>Datos de contácto</h4>
+                        <article class="form-modal-left">
+                            <label>Nombre</label>
+                            <input type="text">
+                            <label>Apellido</label>
+                            <input type="text">
+                            <label>telefono</label>
+                            <input type="tel">
+                            <label>Email</label>
+                            <input type="email">
+                        </article>
+                        <article class="form-modal-right">
+                            <label>Método de pago</label>
+                            <select>
+                                <option>Paypal</option>
+                                <option>Deposito</option>
+                                <option>Mercado Pago</option>
+                                <option>Pago contra entrega</option>
+                            </select>
+                            <label>Direccion</label>
+                            <textarea name="direccion" id="direccion" cols="30" rows="5"></textarea>
+                            <p>* Para PCB rápido el tiempo de entrega es de 24hrs.</p>
+                            <p>* Para PCB profesional el tiempo de entrega es de 10 a 15 días hábiles.</p>
+                            <p>* Entrega a domicilio incluida (Mérida Yucatán)</p>
+                            <p>* Envió resto de la republica $180 MXN</p>
+                            <p>* Una vez solicitado el pedido no hay modificaciones. </p>
+                            <p>* No nos hacemos responsables de la funcionalidad de su diseño</p>
+                            <button>Hacer pedido</button>
+                        </article>
+                    </section>
+                    <!-- <a href="#" rel="modal:close">Cerrar Modal</a> -->
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <section class="har-diseno">
+
+    </section>
+    <section class="har-entregables">
+
+    </section>
+    <section class="har-store">
+
+    </section>
+    <footer id="footer">
+        <div id="textoContacto" class="contact-form">
+            <h3>Cuéntanos tus dudas</h3>
+            <form id="formulario" action="email.php" method="post" class="form-consulta">
+                <input type="text" name="nombre" placeholder="Nombre" class="campo-form" required>
+                </label><br>
+
+                <input type="tel" name="telefono" placeholder="Teléfono" class="campo-form" required>
+                </label><br>
+
+                <input type="email" name="email" placeholder="Email" class="campo-form" required>
+                </label><br>
+
+                <textarea name="mensaje" class="campo-form" placeholder="Mensaje"></textarea>
+                </label><br>
+
+                <input type="submit" value="Enviar" class="btn-form">
+            </form>
+        </div>
+        <div class="contact">
+            <h3>Datos de contacto</h3>
+            <p>T: 999 921 6187</p>
+            <p>C: contacto@sigmoid.com.mx</p>
+            <p>D: Calle 36 #530B entre 71 y 73 Col. Centro Mérida, Yucatán, México</p>
+            <h3>Siguenos en:</h3>
+            <a href=""><img src="img/icons/Instagram.png" id="insta" alt="instagram"></a>
+            <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face" alt="facebook"></a>
+        </div>
+        <div class="footlogo">
+            <img src="img/Sigmoid.png" alt="logo">
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1500,
+            speedAsDuration: true
+        });
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="js/efectos.js"></script>
+    <script src="js/jquery.responsiveTabs.min.js"></script>
+    <script type="text/javascript">
+        var $tabs = $('#horizontalTab');
+        $tabs.responsiveTabs({
+            rotate: false,
+            startCollapsed: 'accordion',
+            collapsible: 'accordion',
+            setHash: true,
+            click: function(e, tab) {
+                $('.info').html('Tab <strong>' + tab.id + '</strong> clicked!');
+            },
+            activate: function(e, tab) {
+                $('.info').html('Tab <strong>' + tab.id + '</strong> activated!');
+            },
+            activateState: function(e, state) {
+                //console.log(state);
+                $('.info').html('Switched from <strong>' + state.oldState + '</strong> state to <strong>' + state.newState + '</strong> state!');
+            }
+        });
+    </script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script>
+        $(function() {
+            $('#formulario').validate({
+                submitHandler: function(form) {
+                    $(form).ajaxSubmit({
+                        url: 'email.php',
+                        success: function() {
+                            $('#textoContacto h3').hide();
+                            $('#formulario').hide();
+                            $('#textoContacto').append("<p class='thanks'>Gracias por contactar con nosotros.</p>")
+                        }
+                    })
+                }
+            })
+        })
+    </script>
 </body>
+
+</html>
