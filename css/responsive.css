@@ -28,6 +28,11 @@ header label {
         height: 240px;
     }
     /* end servicios */
+    /* Software */
+    .sof-banner span {
+        font-size: 24px;
+    
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -108,78 +113,44 @@ header label {
         text-align: center;
     }
     /*------------ software ---------- */
-    .sof-banner {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .sof-banner img {
+    .sof-banner img{
         width: 60%;
-        top: 25%;
-        left: 0%;
+        margin-top: 10%;
     }
     .sof-banner span {
-        font-size: 18px;
+        font-size: 24px;
         width: 100%;
-        left: 47%;
-        top: 15%;
     }
-    .sof-banner i {
-        top: 75%;
-    }
+
     .sof-sistemas {
-        height: 1200px;
+        height: 100%;
     }
     .sof-sistemas h1 {
         width: 100%;
         z-index: 1;
     }
     .sof-sistemas section {
-        margin-top: 13%;
-        height: 80%;
+        height: 100%;
     }
     .sof-sistemas section article {
-        width: 80%;
+        width: 70%;
         height: 25%;
-        margin-top: 2%;
+        margin: 2%;
         padding: 4%;
     }
     .sof-sistemas section article img {
         margin-top: 0%;
     }
-    .sof-apps {
-        height: 1150px;
+    .sof-apps{
+        height: 100%;
     }
-    .sof-apps figure {
-        width: 45%;
-        margin-left: 27.5%;
-        height: 25%;
+    .sof-apps figure{
+        width: 70%;
+        margin-top: 5%;
     }
     .sof-apps article {
         width: 100%;
-        height: 60%;
-    }
-    .sof-apps article h2 {
         text-align: center;
-        font-size: 18px;
-    }
-    .sof-apps article h1 {
-        text-align: center;
-        font-size: 24px;
-    }
-    .sof-app-data {
-        height: 30%;
-        align-items: center;
-        justify-content: space-around;
-    }
-    .sof-app-data figure {
-        width: 15%;
-        height: 100px;
-        margin-left: 0%;
-    }
-    .sof-app-data figure .img-data {
-        width: 70%;
-        margin-left: 0%;
     }
     /*-----------endsoftware -----------*/
 }
@@ -271,45 +242,24 @@ header label {
     }
     /* ----- software ----- */
     .sof-banner {
-        height: 85vh;
+        height: 100vh;
     }
-    .sof-banner img {
+    .sof-banner img{
         width: 80%;
-        left: 10%;
-        top: 15%;
+        margin-top: 10%;
     }
-    .sof-banner span {
-        width: 90%;
-        top: 45%;
-        left: 5%;
-    }
-    .sof-banner i {
-        top: 80%;
-        right: 40%;
+    .sof-banner span{
+        font-size: 22px;
     }
     .sof-sistemas-img2 {
         width: 175px;
         height: 105px;
     }
-    .sof-apps {
-        height: 1200px;
-    }
-    .sof-apps figure {
-        margin-left: 17.5%;
-        width: 65%;
-        height: 20%;
-    }
+
     .sof-app-data {
         width: 100%;
         margin-top: 2%;
     }
-    .sof-app-data figure {
-        width: 25%;
-        height: 100px;
-        margin-left: 0%;
-    }
-    .sof-app-data div {
-        width: 90%;
-    }
+   
     /* ----- end software ----- */
 }

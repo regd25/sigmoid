@@ -473,27 +473,22 @@ section .info {
 }
 
 .sof-banner img {
-    position: absolute;
     width: 50%;
-    top: 15%;
-    left: 5%;
+    margin: auto;
 }
 
 .sof-banner span {
     color: white;
-    width: 40%;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    font-size: 30px;
+    width: 50%;
+    margin: auto;
+    font-size: 28px;
+    text-align: center;
+
 }
 
 .sof-banner i {
     color: white;
-    position: absolute;
-    top: 65%;
-    right: 20%;
-    font-size: 70px;
+    font-size: 48px;
 }
 
 .sof-sistemas {
@@ -567,16 +562,11 @@ section .info {
     height: 100vh;
     background-color: #1956CE;
     color: white;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .sof-apps figure {
     width: 45%;
-    height: 55%;
-    margin: 0;
+    margin: auto;
 }
 
 .sof-apps figure img {
@@ -584,7 +574,11 @@ section .info {
 }
 
 .sof-apps article {
-    width: 54%;
+    width: 50%;
+    margin: 2%;
+}
+.sof-apps article h3 {
+    color: white;   
 }
 
 .sof-app-data {
@@ -597,7 +591,6 @@ section .info {
 .sof-app-data figure {
     width: 90px;
     height: 90px;
-    background-color: #0e3b96;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -605,7 +598,7 @@ section .info {
 }
 
 .sof-app-data figure .img-data {
-    width: 70%;
+    width: 80px;
 }
 
 .sof-app-data div {
