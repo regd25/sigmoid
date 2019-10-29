@@ -96,49 +96,8 @@
 
 /* data tabs*/
 
-.pcb-rapido-conteiner {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    height: 95%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
 
-.pcb-rapido-left {
-    width: 50%;
-    height: 90%;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* align-items: center; */
-    justify-content: center;
-}
-
-.pcb-rapido-left label {
-    width: 90%;
-    height: 5%;
-}
-
-.pcb-rapido-left input {
-    border-radius: 15px;
-    width: 25%;
-    height: 5%;
-}
-
-.pcb-rapido-left input:focus {
-    border-radius: 15px;
-    border: 3px black solid;
-    outline: none;
-}
-
-.pcb-rapido-left textarea {
-    margin-bottom: 12%;
-}
+/* ------ bottom file ------ */
 
 input[type="file"] {
     display: none;
@@ -152,6 +111,172 @@ input[type="file"] {
     cursor: pointer;
     width: 25% !important;
 }
+
+
+/* ------- end bottom file ---- */
+
+
+/* ------------------- pcb rapido -------------------  */
+
+.pcb-rapido-conteiner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 95%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.pcb-rapido-dimension {
+    width: 65%;
+    height: 15%;
+}
+
+.pcb-rapido-img1 {
+    width: 20%;
+    height: 15%;
+}
+
+.pcb-rapido-img1 figure {
+    width: 90%;
+}
+
+.pcb-rapido-img1 figure img {
+    width: 30%;
+}
+
+.pcb-rapido-cantidad {
+    width: 65%;
+    height: 15%;
+}
+
+.pcb-rapido-img2 {
+    width: 20%;
+    height: 15%;
+}
+
+.pcb-rapido-img2 figure {
+    width: 90%;
+}
+
+.pcb-rapido-img2 figure img {
+    width: 30%;
+}
+
+.pcb-rapido-observacion {
+    width: 65%;
+    height: 15%;
+}
+
+.pcb-rapido-img3 {
+    width: 20%;
+    height: 15%;
+}
+
+.pcb-rapido-img3 figure {
+    width: 90%;
+}
+
+.pcb-rapido-img3 figure img {
+    width: 30%;
+}
+
+.pcb-rapido-cargas {
+    width: 65%;
+    height: 15%;
+}
+
+.pcb-rapido-img4 {
+    width: 20%;
+    height: 15%;
+}
+
+.pcb-rapido-img4 figure {
+    width: 90%;
+}
+
+.pcb-rapido-img4 figure img {
+    width: 30%;
+}
+
+.pcb-rapido-solicitar {
+    width: 60%;
+    height: 15%;
+}
+
+.pcb-rapido-precio {
+    width: 30%;
+    height: 15%;
+}
+
+
+/* ---------  end pcb rapido ----------- */
+
+
+/* ------------ pcb profecional -----------  */
+
+.pcb-profecional-conteiner {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: 95%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: white;
+}
+
+.pcb-profecional-dimension {
+    width: 45%;
+}
+
+.pcb-profecional-grosor {
+    width: 35%;
+}
+
+.pcb-profecional-cantidad {
+    width: 25%;
+}
+
+.pcb-profecional-capas {
+    width: 25%;
+}
+
+.pcb-profecional-observaciones {
+    width: 40%;
+}
+
+.pcb-profecional-colores {
+    width: 90%;
+}
+
+.pcb-profecional-acabado {
+    width: 70%;
+}
+
+.pcb-profecional-precio {
+    width: 25%;
+}
+
+.pcb-profecional-cargas {
+    width: 75%;
+}
+
+.pcb-profecional-solicitar {
+    width: 55%;
+}
+
+
+/* ------------ end pcb profecional -----------  */
+
+
+/* ------------ modal general -----------------  */
 
 .form-modal {
     display: flex;
@@ -179,16 +304,6 @@ input[type="file"] {
     width: 100%;
 }
 
-.pcb-rapido-left-boton {
-    font-family: verdana, arial, sans-serif;
-    font-size: 10pt;
-    font-weight: bold;
-    padding: 4px;
-    background-color: #ffffcc;
-    color: #666666;
-    text-decoration: none;
-}
-
 .form-modal-right {
     width: 50%;
     display: flex;
@@ -207,32 +322,5 @@ input[type="file"] {
     width: 100%;
 }
 
-.pcb-rapido-right {
-    width: 40%;
-    height: 90%;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.pcb-rapido-right-info {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    /* justify-content: space-around; */
-}
-
-.pcb-rapido-right-info figure {
-    width: 15%;
-}
-
-.pcb-rapido-right-info figure img {
-    width: 100%;
-}
-
-.pcb-rapido-right-info article {
-    width: 50%;
-}
+/* ------------ end modal -----------------  */

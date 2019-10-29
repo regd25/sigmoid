@@ -65,110 +65,141 @@
 
                 <div class="pcb-rapido" id="tab-1">
                     <div class="pcb-rapido-conteiner">
-                        <article class="pcb-rapido-left">
-                            <label>Dimension</label>
+                        <div class="pcb-rapido-dimension">
+                            <label>Dimension</label> <br>
                             <input type="text"> x
                             <input type="text"> mm
-                            <label>Cantidad</label>
-                            <input type="number"> pzas
-                            <label>Observaciones</label>
+                        </div>
+                        <div class="pcb-rapido-img1">
+                            <figure>
+                                <img src="img/icons/Forma 1 copia 2.png">
+                                <figcaption>Espacio mínimo entre pistas 0.4 mm.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="pcb-rapido-cantidad">
+                            <label>Cantidad</label> <br>
+                            <input type="number">
+                        </div>
+                        <div class="pcb-rapido-img2">
+                            <figure>
+                                <img src="img/icons/Forma 1 copia 5.png">
+                                <figcaption>Tamaño mínimo de drill 0.8mm.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="pcb-rapido-observacion">
+                            <label>Observaciones</label><br>
                             <textarea></textarea>
-                            <label>Sube tu proyecto Eagle en zip o archivo .BRD</label>
+                        </div>
+                        <div class="pcb-rapido-img3">
+                            <figure>
+                                <img src="img/icons/Forma 1 copia 5.png">
+                                <figcaption>Tamaño máximo de drill 0.8 mm.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="pcb-rapido-cargas">
+                            <h3>Sube tu ptoyecto Eagle en zip o archivo .BRD</h3>
                             <label for="file-upload" class="custom-file-upload">Explorar</label><br>
                             <input id="file-upload" type="file">
-
+                        </div>
+                        <div class="pcb-rapido-img4">
+                            <figure>
+                                <img src="img/icons/Forma 1 copia 5.png">
+                                <figcaption>1 cara.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="pcb-rapido-solicitar">
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
-                        </article>
-                        <article class="pcb-rapido-right">
-                            <div class="pcb-rapido-right-info">
-                                <figure>
-                                    <img src="img/icons/Forma 1 copia 2.png">
-                                </figure>
-                                <article>
-                                    <p>Espacio mínimo entre pistas 0.4 mm.</p>
-                                </article>
-                            </div>
-                            <div class="pcb-rapido-right-info">
-                                <figure>
-                                    <img src="img/icons/Forma 1 copia 4.png">
-                                </figure>
-                                <article>
-                                    <p>Tamaño mínimo de drill 0.8 mm.</p>
-                                </article>
-                            </div>
-                            <div class="pcb-rapido-right-info">
-                                <figure>
-                                    <img src="img/icons/Forma 1 copia 5.png">
-                                </figure>
-                                <article>
-                                    <p>Tamaño máximo de PCB 150 mm x 250 mm..</p>
-                                </article>
-                            </div>
-                            <div class="pcb-rapido-right-info">
-                                <figure>
-                                    <img src="img/icons/pcb_346692.png">
-                                </figure>
-                                <article>
-                                    <p>1 cara.</p>
-                                </article>
-                            </div>
-                        </article>
+                        </div>
+                        <div class="pcb-rapido-precio">
+                            <h1>$ <span>0.00</span></h1>
+                        </div>
                     </div>
                 </div>
-                <div class="pcb-rapido" id="tab-2">
-                    <div class="pcb-rapido-conteiner">
-                        <article class="pcb-rapido-left">
-                            <label>Dimension</label>
+                <div class="pcb-profecional" id="tab-2">
+                    <div class="pcb-profecional-conteiner">
+                        <div class="pcb-profecional-dimension">
+                            <label>Dimension</label> <br>
                             <input type="text"> x
                             <input type="text"> mm
-                            <label>Cantidad</label>
+                        </div>
+                        <div class="pcb-profecional-grosor">
+                            <label>Grosor</label> <br>
+                            <select>
+                                    <option>0.4mm</option>
+                                    <option>0.6mm</option>
+                                    <option>0.8mm</option>
+                                    <option>1.0mm</option>
+                                    <option>1.2mm</option>
+                                    <option>1.6mm</option>
+                                    <option>2.0mm</option>
+                                    <option>2.4mm</option>
+                                </select>
+                        </div>
+                        <div class="pcb-profecional-cantidad">
+                            <label>Cantidad</label><br>
                             <input type="number"> pzas
-                            <label>Observaciones</label>
+                        </div>
+                        <div class="pcb-profecional-capas">
+                            <label>N. capas</label> <br>
+                            <select>
+                                    <option>1 capa</option>
+                                    <option>2 capas</option>
+                                    <option>4 capas</option>
+                                    <option>6 capas</option>
+                                    <option>8 capas</option>
+                                    <option>10 capas</option>
+                                    <option>12 capas</option>
+                                    <option>14 capas</option>
+                                </select>
+                        </div>
+                        <div class="pcb-profecional-observaciones">
+                            <label>Observaciones</label><br>
                             <textarea></textarea>
-                            <label>Sube tu proyecto Eagle en zip o archivo .BRD</label>
+                        </div>
+
+                        <div class="pcb-profecional-colores">
+                            <h3>colores</h3>
+                            <input type="radio" name="sexo" id="verde">
+                            <label for="verde">Verde</label>
+
+                            <input type="radio" name="sexo" id="rojo">
+                            <label for="rojo">Rojo</label>
+
+                            <input type="radio" name="sexo" id="amarillo">
+                            <label for="amarillo">Amarillo</label>
+                            <input type="radio" name="sexo" id="azul">
+                            <label for="azul">Azul</label>
+
+                            <input type="radio" name="sexo" id="blanco">
+                            <label for="blanco">Blanco</label>
+
+                            <input type="radio" name="sexo" id="negro">
+                            <label for="negro">Negro</label>
+                        </div>
+                        <div class="pcb-profecional-acabado">
+                            <h3>Acabado</h3>
+                            <input type="radio" name="acabado" id="hasl">
+                            <label for="hasl">HASL</label>
+                            <input type="radio" name="acabado" id="haslro">
+                            <label for="haslro">HASL-ROHS</label>
+                            <input type="radio" name="acabado" id="enig">
+                            <label for="enig">ENIG-RoHS</label>
+                        </div>
+                        <div class="pcb-profecional-precio">
+                            <h1>$ <span>0.00</span></h1>
+                        </div>
+                        <div class="pcb-profecional-cargas">
+                            <h3>Cargar archivos Gerber</h3>
                             <label for="file-upload" class="custom-file-upload">Explorar</label><br>
                             <input id="file-upload" type="file">
-
+                        </div>
+                        <div class="pcb-profecional-solicitar">
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
-                        </article>
-                        <article class="pcb-rapido-right">
-                            <div class="pcb-rapido-right-info">
-                                <figure>
-                                    <img src="img/icons/Forma 1 copia 2.png">
-                                </figure>
-                                <article>
-                                    <p>Espacio mínimo entre pistas 0.4 mm.</p>
-                                </article>
-                            </div>
-                            <div class="pcb-rapido-right-info">
-                                <figure>
-                                    <img src="img/icons/Forma 1 copia 4.png">
-                                </figure>
-                                <article>
-                                    <p>Tamaño mínimo de drill 0.8 mm.</p>
-                                </article>
-                            </div>
-                            <div class="pcb-rapido-right-info">
-                                <figure>
-                                    <img src="img/icons/Forma 1 copia 5.png">
-                                </figure>
-                                <article>
-                                    <p>Tamaño máximo de PCB 150 mm x 250 mm..</p>
-                                </article>
-                            </div>
-                            <div class="pcb-rapido-right-info">
-                                <figure>
-                                    <img src="img/icons/pcb_346692.png">
-                                </figure>
-                                <article>
-                                    <p>1 cara.</p>
-                                </article>
-                            </div>
-                        </article>
+                        </div>
                     </div>
                 </div>
                 <div id="tab-3">
-                    <p>Mauris facilisis elit ut sem eleifend accumsan molestie sit amet dolor. Pellentesque dapibus arcu eu lorem laoreet, vitae cursus metus mattis. Nullam eget porta enim, eu rutrum magna. Duis quis tincidunt sem, sit amet faucibus magna.
+                    <p style="color: white;">Mauris facilisis elit ut sem eleifend accumsan molestie sit amet dolor. Pellentesque dapibus arcu eu lorem laoreet, vitae cursus metus mattis. Nullam eget porta enim, eu rutrum magna. Duis quis tincidunt sem, sit amet faucibus magna.
                         Integer commodo, turpis consequat fermentum egestas, leo odio posuere dui, elementum placerat eros erat id augue. Nullam at eros eget urna vestibulum malesuada vitae eu mauris. Aliquam interdum rhoncus velit, quis scelerisque leo
                         viverra non. Suspendisse id feugiat dui. Nulla in aliquet leo. Proin vel magna sed est gravida rhoncus. Mauris lobortis condimentum nibh, vitae bibendum tortor vehicula ac. Curabitur posuere arcu eros.</p>
                 </div>
