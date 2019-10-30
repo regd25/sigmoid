@@ -23,7 +23,7 @@
     border-radius: 10px 10px 0 0;
     background-color:rgba(49, 116, 108, 0.527);
     text-align: center;
-    height: 15%;
+    height: 10%;
     align-items: center;
     display: flex;
     align-items: center;
@@ -49,9 +49,7 @@
 
 
 /* Active state tab anchor */
-.r-tabs .r-tabs-nav .r-tabs-state-active {
-    
-}
+
 .r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
     text-shadow: none;
     transform: scale(1.2);
@@ -64,7 +62,7 @@
 
 .r-tabs .r-tabs-panel {
     
-    height: 85%;
+    height: 90%;
     padding: 0;
 }
 
@@ -111,113 +109,140 @@ input[type="file"] {
 }
 
 .custom-file-upload {
-    border: 3px solid #ccc;
-    border-radius: 15px;
-    display: inline-block;
-    padding: 0px 4px;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 10%;
+    padding: 5px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
     cursor: pointer;
-    width: 25% !important;
+    text-align: center;
+    width: 30%;
 }
 
 
 /* ------- end bottom file ---- */
 
-
+/* -------------------Global--------------------*/
+input[type="text"], input[type="number"], textarea, input[type="email"], input[type="tel"], select{
+    padding: 7px 0;
+    padding-left: 2%;
+    border: solid 0px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    margin-top: 2%;
+    background-color: white;
+    
+}
+input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hover{
+    -webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    -moz-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
 /* ------------------- pcb rapido -------------------  */
 
 .pcb-rapido-conteiner {
     display: flex;
-    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    justify-content: space-around;
+    width: 96%;
+    height: 96%;
     color: white;
+    padding: 2%;
 }
-
+.pcb-rapido-conteiner figure{
+    margin: 5% 0;
+    width: 100%;
+    flex-flow: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pcb-rapido-conteiner figure figcaption{
+    width: 75%
+}
+.pcb-rapido-conteiner img {
+    width: 17%;
+}
 .pcb-rapido-dimension {
-    width: 65%;
+    width: 40%;
     height: 15%;
+}
+.pcb-rapido-dimension input{
+    width: 30%;
 }
 
 .pcb-rapido-img1 {
-    width: 20%;
+    width: 40%;
     height: 15%;
-}
-
-.pcb-rapido-img1 figure {
-    width: 90%;
-}
-
-.pcb-rapido-img1 figure img {
-    width: 30%;
 }
 
 .pcb-rapido-cantidad {
-    width: 65%;
+    width: 40%;
     height: 15%;
 }
-
-.pcb-rapido-img2 {
-    width: 20%;
-    height: 15%;
-}
-
-.pcb-rapido-img2 figure {
-    width: 90%;
-}
-
-.pcb-rapido-img2 figure img {
+.pcb-rapido-cantidad input{
     width: 30%;
 }
 
+.pcb-rapido-img2 {
+    width: 40%;
+    height: 15%;
+}
+
 .pcb-rapido-observacion {
-    width: 65%;
+    width: 40%;
     height: 15%;
 }
 
 .pcb-rapido-img3 {
-    width: 20%;
+    width: 40%;
     height: 15%;
-}
-
-.pcb-rapido-img3 figure {
-    width: 90%;
-}
-
-.pcb-rapido-img3 figure img {
-    width: 30%;
 }
 
 .pcb-rapido-cargas {
-    width: 65%;
-    height: 15%;
+    width: 40%;
+    height: 20%;
 }
 
 .pcb-rapido-img4 {
-    width: 20%;
+    width: 40%;
     height: 15%;
 }
 
-.pcb-rapido-img4 figure {
-    width: 90%;
-}
-
-.pcb-rapido-img4 figure img {
-    width: 30%;
-}
 
 .pcb-rapido-solicitar {
-    width: 60%;
+    width: 40%;
     height: 15%;
+}
+.pcb-rapido-solicitar a.pcb-rapido-left-boton{
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
 }
 
 .pcb-rapido-precio {
-    width: 30%;
+    width: 40%;
     height: 15%;
 }
-
+.pcb-rapido-precio h1{
+    font-size: 50px;
+    margin: 0%;
+    display: inline-block;
+}
+.pcb-rapido-precio h4{
+    display: inline-block;
+    margin: 0%;
+}
 
 /* ---------  end pcb rapido ----------- */
 
@@ -226,14 +251,13 @@ input[type="file"] {
 
 .pcb-profecional-conteiner {
     display: flex;
-    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 95%;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    justify-content: space-around;
+    width: 96%;
+    height: 96%;
+    padding: 2%;
+    color: white;
     
 }
 
@@ -242,30 +266,59 @@ input[type="file"] {
 
 .pcb-profecional-dimension {
     width: 45%;
+    height: 15%;
+}
+.pcb-profecional-dimension input{
+    width: 30%;
 }
 
 .pcb-profecional-grosor {
-    width: 35%;
+    width: 45%;
 }
 
 .pcb-profecional-cantidad {
-    width: 25%;
+    width: 22.5%;
 }
-
+.pcb-profecional-cantidad input{
+    width: 90%;
+}
 .pcb-profecional-capas {
-    width: 25%;
+    width: 22.5%;
 }
-
+.pcb-profecional-capas input{
+    width: 60%;
+}
 .pcb-profecional-observaciones {
-    width: 40%;
+    width: 45%;
+}
+.pcb-profecional-observaciones textarea{
+    padding: 1% 2% 10% 2%;
 }
 
 .pcb-profecional-colores {
-    width: 90%;
+    width: 95%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
 }
+.pcb-profecional-colores span{  
+    display: block;
+    margin: 2% auto;
+    width: 100%;
+}
+.pcb-profecional-colores input{
+    width: 15%;
+    back
+}
+.pcb-profecional-colores label{
 
+}
 .pcb-profecional-acabado {
     width: 70%;
+}
+.pcb-profecional-acabado span{
+    display: block;
+    margin: 2% auto;
 }
 
 .pcb-profecional-precio {
@@ -285,22 +338,32 @@ input[type="file"] {
 
 
 /* ------------ modal general -----------------  */
-
+.modal {
+    background-color: #f2f2f2 !important;
+}
 .form-modal {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
+    align-items: baseline;
+    width: 94%;
+    padding: 3%;
+}
+.form-modal input[type="text"],.form-modal input[type="number"],.form-modal textarea,.form-modal input[type="tel"],.form-modal input[type="email"], .form-modal select{
+    -webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    -moz-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
 
-.form-modal h4 {
+.form-modal h2 {
     width: 100%;
     text-align: center;
+    font-weight: lighter;
 }
 
 .form-modal-left {
-    width: 35%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -310,10 +373,11 @@ input[type="file"] {
 
 .form-modal-left label {
     width: 100%;
+    margin-top: 2%;
 }
 
 .form-modal-right {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -323,12 +387,26 @@ input[type="file"] {
 
 .form-modal-right label {
     width: 100%;
+    margin-top: 2%;
 }
-
+textarea#direccion {
+    margin-bottom: 5%;
+}
 .form-modal-right p {
     font-size: 9px;
     width: 100%;
+    margin: 1% 0;
 }
-
+.form-modal-right button{
+    font-size: 15px;
+    text-decoration: none;
+    color: #076FFB;
+    padding: 5px 20px;
+    border: 2px solid #076FFB;
+    border-radius: 20px;
+    background: none;
+    margin: 3% 0;
+}
+]
 
 /* ------------ end modal -----------------  */

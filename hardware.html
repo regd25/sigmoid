@@ -78,7 +78,7 @@
                         </div>
                         <div class="pcb-rapido-cantidad">
                             <label>Cantidad</label> <br>
-                            <input type="number">
+                            <input type="number"> pzas
                         </div>
                         <div class="pcb-rapido-img2">
                             <figure>
@@ -97,7 +97,7 @@
                             </figure>
                         </div>
                         <div class="pcb-rapido-cargas">
-                            <h3>Sube tu ptoyecto Eagle en zip o archivo .BRD</h3>
+                            <span>Sube tu ptoyecto Eagle en zip o archivo .BRD</span>
                             <label for="file-upload" class="custom-file-upload">Explorar</label><br>
                             <input id="file-upload" type="file">
                         </div>
@@ -111,7 +111,7 @@
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
                         </div>
                         <div class="pcb-rapido-precio">
-                            <h1>$ <span>0.00</span></h1>
+                            <h1>$ <span>0.00</span></h1><h4>MXN</h4>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,19 @@
                         </div>
                         <div class="pcb-profecional-cantidad">
                             <label>Cantidad</label><br>
-                            <input type="number"> pzas
+                            <select>
+                                    <option>5 pzas</option>
+                                    <option>10 pzas</option>
+                                    <option>15 pzas</option>
+                                    <option>20 pzas</option>
+                                    <option>25 pzas</option>
+                                    <option>30 pzas</option>
+                                    <option>50 pzas</option>
+                                    <option>75 pzas</option>
+                                    <option>100 pzas</option>
+                                    <option>500 pzas</option>
+                                    <option>2000 pzas</option>
+                            </select>
                         </div>
                         <div class="pcb-profecional-capas">
                             <label>N. capas</label> <br>
@@ -158,26 +170,26 @@
                         </div>
 
                         <div class="pcb-profecional-colores">
-                            <h3>colores</h3>
-                            <input type="radio" name="sexo" id="verde">
+                            <span>Colores</span>
+                            <input type="radio" name="color" id="verde">
                             <label for="verde">Verde</label>
 
-                            <input type="radio" name="sexo" id="rojo">
+                            <input type="radio" name="color" id="rojo">
                             <label for="rojo">Rojo</label>
 
-                            <input type="radio" name="sexo" id="amarillo">
+                            <input type="radio" name="color" id="amarillo">
                             <label for="amarillo">Amarillo</label>
-                            <input type="radio" name="sexo" id="azul">
+                            <input type="radio" name="color" id="azul">
                             <label for="azul">Azul</label>
 
-                            <input type="radio" name="sexo" id="blanco">
+                            <input type="radio" name="color" id="blanco">
                             <label for="blanco">Blanco</label>
 
-                            <input type="radio" name="sexo" id="negro">
+                            <input type="radio" name="color" id="negro">
                             <label for="negro">Negro</label>
                         </div>
                         <div class="pcb-profecional-acabado">
-                            <h3>Acabado</h3>
+                            <span>Acabado</span>
                             <input type="radio" name="acabado" id="hasl">
                             <label for="hasl">HASL</label>
                             <input type="radio" name="acabado" id="haslro">
@@ -205,7 +217,7 @@
                 </div>
                 <div id="ex1" class="modal" style="max-width: 900px; padding: 5px 25px;">
                     <section class="form-modal">
-                        <h4>Datos de contácto</h4>
+                        <h2>Datos de contácto</h2>
                         <article class="form-modal-left">
                             <label>Nombre</label>
                             <input type="text">
