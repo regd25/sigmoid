@@ -48,17 +48,17 @@
     <section class="har-banner">
         <article class="har-banner-tex">
             <h1>Diseño y fabricación PCB</h1>
-            <h2>Diseño a partir de un esquemático y <br> fabricación con acabado profesional</h2>
+            <span>Diseño a partir de un esquemático y fabricación con acabado profesional</span>
             <br>
-            <h2>Elige la modalidad que mas se adecue <br> a tu proyecto</h2>
+            <span>Elige la modalidad que mas se adecúe a tu proyecto</span>
             <br>
-            <h2><b>¡Prueba nuestro cotizador!</b></h2>
+            <h2>¡Prueba nuestro cotizador!</h2>
         </article>
         <article class="har-banner-cotizador">
             <!--Horizontal Tab-->
             <div id="horizontalTab">
                 <ul>
-                    <li><a href="#tab-1">PCB Rapido</a></li>
+                    <li><a href="#tab-1">PCB Rápido</a></li>
                     <li><a href="#tab-2">PCB Profesional</a></li>
                     <li><a href="#tab-3">Diseño</a></li>
                 </ul>
@@ -66,7 +66,7 @@
                 <div class="pcb-rapido" id="tab-1">
                     <div class="pcb-rapido-conteiner">
                         <div class="pcb-rapido-dimension">
-                            <label>Dimension</label> <br>
+                            <label>Dimensión</label> <br>
                             <input type="text"> x
                             <input type="text"> mm
                         </div>
@@ -97,7 +97,7 @@
                             </figure>
                         </div>
                         <div class="pcb-rapido-cargas">
-                            <span>Sube tu ptoyecto Eagle en zip o archivo .BRD</span>
+                            <span>Sube tu proyecto Eagle en zip o archivo .BRD</span>
                             <label for="file-upload" class="custom-file-upload">Explorar</label><br>
                             <input id="file-upload" type="file">
                         </div>
@@ -118,7 +118,7 @@
                 <div class="pcb-profecional" id="tab-2">
                     <div class="pcb-profecional-conteiner">
                         <div class="pcb-profecional-dimension">
-                            <label>Dimension</label> <br>
+                            <label>Dimensión</label> <br>
                             <input type="text"> x
                             <input type="text"> mm
                         </div>
@@ -172,21 +172,22 @@
                         <div class="pcb-profecional-colores">
                             <span>Colores</span>
                             <input type="radio" name="color" id="verde">
-                            <label for="verde">Verde</label>
+                            <label for="verde" class="verde">Verde</label>
 
                             <input type="radio" name="color" id="rojo">
-                            <label for="rojo">Rojo</label>
+                            <label for="rojo" class="rojo">Rojo</label>
 
                             <input type="radio" name="color" id="amarillo">
-                            <label for="amarillo">Amarillo</label>
+                            <label for="amarillo" class="amarillo">Amarillo</label>
+
                             <input type="radio" name="color" id="azul">
-                            <label for="azul">Azul</label>
+                            <label for="azul" class="azul">Azul</label>
 
                             <input type="radio" name="color" id="blanco">
-                            <label for="blanco">Blanco</label>
+                            <label for="blanco" class="blanco">Blanco</label>
 
                             <input type="radio" name="color" id="negro">
-                            <label for="negro">Negro</label>
+                            <label for="negro" class="negro">Negro</label>
                         </div>
                         <div class="pcb-profecional-acabado">
                             <span>Acabado</span>
@@ -197,16 +198,16 @@
                             <input type="radio" name="acabado" id="enig">
                             <label for="enig">ENIG-RoHS</label>
                         </div>
-                        <div class="pcb-profecional-precio">
-                            <h1>$ <span>0.00</span></h1>
-                        </div>
                         <div class="pcb-profecional-cargas">
-                            <h3>Cargar archivos Gerber</h3>
+                            <span>Cargar archivos Gerber</span>
                             <label for="file-upload" class="custom-file-upload">Explorar</label><br>
                             <input id="file-upload" type="file">
                         </div>
                         <div class="pcb-profecional-solicitar">
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
+                        </div>
+                        <div class="pcb-profecional-precio">
+                            <h1>$ <span>0.00</span></h1><h4>MXN</h4>
                         </div>
                     </div>
                 </div>
@@ -223,7 +224,7 @@
                             <input type="text">
                             <label>Apellido</label>
                             <input type="text">
-                            <label>telefono</label>
+                            <label>Teléfono</label>
                             <input type="tel">
                             <label>Email</label>
                             <input type="email">
@@ -236,7 +237,7 @@
                                 <option>Mercado Pago</option>
                                 <option>Pago contra entrega</option>
                             </select>
-                            <label>Direccion</label>
+                            <label>Dirección</label>
                             <textarea name="direccion" id="direccion" cols="30" rows="5"></textarea>
                             <p>* Para PCB rápido el tiempo de entrega es de 24hrs.</p>
                             <p>* Para PCB profesional el tiempo de entrega es de 10 a 15 días hábiles.</p>
@@ -254,13 +255,78 @@
         </article>
     </section>
     <section class="har-diseno">
-
+        <figure>
+            <img src="img/Hardware/Transform board-f.png" alt="Diseño">
+        </figure>
+        <article>
+            <h3>DISEÑO E IMPLEMENTACIÓN DE ELECTRÓNICA</h3>
+            <h1>Convertimos tu proyecto en un prototipo funcional.</h1>
+            <p>¿Necesitas que tu idea salga a la luz? Ofrecemos desarrollo electrónico de altos estándares
+                partiendo desde un diagrama a bloques hasta un prototipo completamente funcional.
+            </p>
+            <br>
+            <a href="#footer">Cotiza</a>
+        </article>
     </section>
     <section class="har-entregables">
-
+        <h1>Entregables</h1>
+        <section class="har-entregables-content">
+            <article>
+                <section class="har-entregables-data">
+                    <figure>
+                        <img src="img/icons/integrated-circuit-64.png" alt="Diagram">
+                    </figure>
+                    <div>
+                        <h2>Diagrama esquematico</h2>
+                        <p>Entregamos el diagrama esquemático con componentes estandarizados.</p>
+                    </div>
+                </section>
+                <section class="har-entregables-data">
+                    <figure>
+                        <img src="img/icons/integrated-circuit-64.png" alt="CAD">
+                    </figure>
+                    <div>
+                        <h2>CAD 3D</h2>
+                        <p>Diseño CAD en caso de requerirlo, en formato STL.</p>
+                    </div>
+                </section>
+                <section class="har-entregables-data">
+                    <figure>
+                        <img src="img/icons/integrated-circuit-64.png" alt="Code">
+                    </figure>
+                    <div>
+                        <h2>Código de programación</h2>
+                        <p>Recibirás el codigo de tu proyecto en C, Arduino o Python.</p>
+                    </div>
+                </section>
+                <section class="har-entregables-data">
+                    <figure>
+                        <img src="img/icons/integrated-circuit-64.png" alt="Manual">
+                    </figure>
+                    <div>
+                        <h2>Manual</h2>
+                        <p>Todos nuestros clientes reciben un manual técnico de su proyecto.</p>
+                    </div>
+                </section>
+            </article>
+            <figure class="hardware-img">
+                <img src="img/Hardware/estacion.png" alt="ejemplo hardware">
+            </figure>
+        </section>
     </section>
     <section class="har-store">
-
+        <article>
+            <h3>STORE</h3>
+            <h1>Sensores, módulos y mas...</h1>
+            <p>Tenemos artículos para desatar tu potencial, visita nuestra tienda
+                en mercado libre o descarga nuestro catalogo.
+            </p>
+            <a href="" class="button-blue">Catalogo</a>
+            <a href=""><img class="ml-store" src="img/icons/MercadoLibre_logo.png" alt="Mercado libre"></a>
+        </article>
+        <figure>
+            <img src="img/Hardware/arduino.png" alt="Tienda">
+        </figure>
     </section>
     <footer id="footer">
         <div id="textoContacto" class="contact-form">

@@ -43,7 +43,14 @@ section h3 {
 h4 {
     font-family: fuente_bold;
 }
-
+.button-blue{
+    background-color: #066EFB;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
 
 /* inicio de menu */
 
@@ -614,7 +621,7 @@ section .info {
 .har-banner {
     width: 100%;
     height: 100vh;
-    background-attachment: fixed;
+    background-attachment: fixed;   
     margin-left: auto;
     margin-right: auto;
     background-image: url(../img/inicio/slide5.png);
@@ -629,12 +636,29 @@ section .info {
 
 .har-banner-tex {
     width: 50%;
-    height: 45%;
+    height: 50%;
     /* border: 1px red solid; */
     text-align: center;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
-
+.har-banner-tex h1 {
+    font-size: 42px;
+    margin: 0%;
+    width: 100%;
+}
+.har-banner-tex span{
+    margin: 2% 0;
+    width: 60%;
+    font-size: 24px;
+    font-weight: lighter;
+}
+.har-banner-tex h2{
+    width: 100%;
+}
 .har-banner-cotizador {
     width: 45%;
     height: 75%;
@@ -644,25 +668,98 @@ section .info {
     width: 100%;
     height: 100vh;
     display: flex;
-    align-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
 }
-
-.har-entregables {
+.har-diseno figure {
+    width: 55%;
+    margin: 0;
+}
+.har-diseno figure img {
     width: 100%;
+}
+.har-diseno article {
+    width: 35%;
+    padding: 5%;
+}
+.har-diseno article a{
+    margin-top: 5%;
+    font-size: 15px;
+    text-decoration: none;
+    color: #076FFB;
+    padding: 5px 20px;
+    border: 2px solid #076FFB;
+    border-radius: 20px;
+}
+.har-entregables {
+    width: 94%;
     height: 100vh;
-    background-color: #0098cd;
+    background-color: #1998CD;
     color: white;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    align-content: center;
+    padding: 3%;
 }
-
+.har-entregables h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.har-entregables-data {
+    justify-content: left;
+    align-items: center;
+}
+.har-entregables-data figure {
+    margin: 0;
+    width: 12%;
+    padding: 4%;
+}
+.har-entregables-data figure img{
+    width: 100%;
+}
+.har-entregables-data div {
+    width: 80%; 
+}
+.har-entregables article{
+    padding: 5%;
+    width: 35%;
+}
+.har-entregables .hardware-img{
+    width: 51%;
+    margin: 0;
+    padding: 2%;
+}
+.har-entregables .hardware-img img{
+    width: 100%;
+}
 .har-store {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
-    align-content: flex-start;
+    align-items: center;
+}
+.har-store article{
+    margin: 5%;
+    width: 36%;
+    padding: 3% 2%;
+    background-color: white;
+}
+.har-store a
+img.ml-store{
+    width: 140px;
+    margin-bottom: -12px;
+    margin-left: 10%;
+}
+.har-store figure{
+    width: 50%;
+    margin: 0%;
+    padding: 2% 0;
+}
+.har-store figure img{
+    width: 100%;
 }
 
 

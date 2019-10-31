@@ -33,6 +33,23 @@ header label {
         font-size: 24px;
     
     }
+    .har-banner-tex{
+        width: 40%;
+    }
+    .har-banner-tex h1 {
+        font-size: 30px;
+        margin: 0%;
+        width: 100%;
+    }
+    .har-banner-tex span{
+        margin: 2% 0;
+        width: 90%;
+        font-size: 24px;
+        font-weight: lighter;
+    }
+    .har-banner-cotizador {
+        width: 55%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -153,6 +170,82 @@ header label {
         text-align: center;
     }
     /*-----------endsoftware -----------*/
+    /*-----------hardware -----------*/
+    .har-banner {
+        height: 100%;
+    }
+    .har-banner-tex {
+        margin-top: 15%;
+        width: 80%;
+    }
+    .har-banner-tex span{
+        display: none;
+    }
+    .har-banner-cotizador{
+        width: 85%;
+        height: 90%;
+        margin-bottom: 10%;
+    }
+    .har-entregables {
+        height: 100%;
+        flex-direction: row-reverse;
+    }
+    .har-entregables h1 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .har-entregables .har-entregables-content{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .har-entregables article{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .har-entregables-data {
+        justify-content: center;
+        align-content: baseline;
+        width: 41%;
+        text-align: center;
+        margin: 2%;
+    }
+    .har-entregables-data figure {
+        width: 100%;
+    }
+    .har-entregables-data figure img{
+        width: 64px;
+    }
+    .har-entregables-data div {
+        width: 100%; 
+    }
+    
+    .har-entregables .hardware-img{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+    .har-entregables .hardware-img img{
+        width: 80%;
+    }
+    .har-store article{
+        margin: 5% 0 2% 0;
+        width: 70%;
+        padding: 5% 0;
+        background-color: white;
+        text-align: center;
+    }
+    .har-store figure{
+        width: 80%;
+        margin: 0%;
+        padding: 0;
+    }
+    .har-store figure img{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -262,4 +355,62 @@ header label {
     }
    
     /* ----- end software ----- */
+    /* ----- hardware ----- */
+    .har-banner-tex {
+        margin-top: 20%;
+        width: 80%;
+    }
+    .har-banner-tex span{
+        display: none;
+    }
+    .har-banner-cotizador{
+        width: 95%;
+        height: 80%;
+        margin-bottom: 10%;
+    }
+    .har-diseno {
+        height: 100vh;
+ 
+    }
+    .har-diseno figure {
+        width: 75%;
+        margin: 5%;
+    }
+    .har-diseno figure img {
+        width: 100%;
+    }
+    .har-diseno article {
+        width: 80%;
+        padding: 5%;
+        text-align: center;
+    }
+    .har-diseno article a{
+        margin-top: 5%;
+        font-size: 15px;
+        text-decoration: none;
+        color: #076FFB;
+        padding: 5px 20px;
+        border: 2px solid #076FFB;
+        border-radius: 20px;
+    }
+    .har-entregables-data {
+        width: 90%;
+        margin: 0;
+    }
+
+    .har-entregables .hardware-img{
+        margin: 0;
+    }
+    .har-entregables .hardware-img img{
+        width: 100%;
+    }
+    .har-store h1 {
+        font-size: 30px;
+    }
+    .har-store a
+    img.ml-store{
+    width: 140px;
+    margin-bottom: -12px;
+    margin-left: 0%;
+    }
 }
