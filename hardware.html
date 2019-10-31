@@ -66,9 +66,9 @@
                 <div class="pcb-rapido" id="tab-1">
                     <div class="pcb-rapido-conteiner">
                         <div class="pcb-rapido-dimension">
-                            <label>Dimensión</label> <br>
-                            <input type="text"> x
-                            <input type="text"> mm
+                            <label>Dimension</label> <br>
+                            <input min="50" max="250" type="number" id="uno" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> x
+                            <input min="50" max="250" type="number" id="dos" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> mm
                         </div>
                         <div class="pcb-rapido-img1">
                             <figure>
@@ -78,7 +78,14 @@
                         </div>
                         <div class="pcb-rapido-cantidad">
                             <label>Cantidad</label> <br>
-                            <input type="number"> pzas
+                            <select id="tres">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <!-- <input min="" type="number" id="tres" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> -->
                         </div>
                         <div class="pcb-rapido-img2">
                             <figure>
@@ -111,7 +118,8 @@
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
                         </div>
                         <div class="pcb-rapido-precio">
-                            <h1>$ <span>0.00</span></h1><h4>MXN</h4>
+                            <h1>$ <span id="data">0.00</span></h1>
+                            <h4>MXN</h4>
                         </div>
                     </div>
                 </div>
@@ -395,6 +403,7 @@
     </script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/jquery.form.js"></script>
+    <script src="js/cotizador.js"></script>
     <script>
         $(function() {
             $('#formulario').validate({
