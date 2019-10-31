@@ -13,7 +13,11 @@ function cotizar1() {
                             dato1 = 250.00
                         } else {
                             if (variable1 == 250) {
-                                dato1 = 300
+                                if (variable2 <= 150) {
+                                    dato1 = 300
+                                } else {
+                                    alert('bla bla bla')
+                                }
                             }
                         }
                     } else {
@@ -35,7 +39,11 @@ function cotizar1() {
                             dato1 = 250.00
                         } else {
                             if (variable2 == 250) {
-                                dato1 = 300
+                                if (variable1 <= 150) {
+                                    dato1 = 300
+                                } else {
+                                    alert('bla bla bla')
+                                }
                             }
                         }
                     } else {
@@ -49,10 +57,24 @@ function cotizar1() {
             }
         }
     }
-    sumaTotal = dato1 * (cantidad - 0.25)
-    if (sumaTotal == null) {
-        $('#data').text('0')
-    } else {
+
+    if (cantidad <= 3) {
+        sumaTotal = dato1 * cantidad
         $('#data').text(sumaTotal.toString())
+    } else {
+        if (cantidad == 4) {
+            sumaTotal = dato1 * 3.75
+            $('#data').text(sumaTotal.toString())
+        } else {
+            sumaTotal = dato1 * 4.5
+            $('#data').text(sumaTotal.toString())
+        }
     }
+    //sumaTotal = dato1 * cantidad
+    //console.log(sumaTotal)
+    //$('#data').text(sumaTotal.toString())
 }
+
+$("#tres").change(function() {
+    cotizar1();
+});

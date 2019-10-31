@@ -67,8 +67,8 @@
                     <div class="pcb-rapido-conteiner">
                         <div class="pcb-rapido-dimension">
                             <label>Dimension</label> <br>
-                            <input type="number" id="uno" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> x
-                            <input type="number" id="dos" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> mm
+                            <input min="50" max="250" type="number" id="uno" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> x
+                            <input min="50" max="250" type="number" id="dos" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> mm
                         </div>
                         <div class="pcb-rapido-img1">
                             <figure>
@@ -78,11 +78,14 @@
                         </div>
                         <div class="pcb-rapido-cantidad">
                             <label>Cantidad</label> <br>
-<<<<<<< HEAD
-                            <input type="number" id="tres" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();">
-=======
-                            <input type="number"> pzas
->>>>>>> 8e4ac47dfae2ac9daab2c46ef60c2589c630449c
+                            <select id="tres">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                            <!-- <input min="" type="number" id="tres" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> -->
                         </div>
                         <div class="pcb-rapido-img2">
                             <figure>
@@ -115,11 +118,8 @@
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
                         </div>
                         <div class="pcb-rapido-precio">
-<<<<<<< HEAD
                             <h1>$ <span id="data">0.00</span></h1>
-=======
-                            <h1>$ <span>0.00</span></h1><h4>MXN</h4>
->>>>>>> 8e4ac47dfae2ac9daab2c46ef60c2589c630449c
+                            <h4>MXN</h4>
                         </div>
                     </div>
                 </div>
