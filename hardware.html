@@ -67,8 +67,8 @@
                     <div class="pcb-rapido-conteiner">
                         <div class="pcb-rapido-dimension">
                             <label>Dimension</label> <br>
-                            <input min="50" max="250" type="number" id="uno" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> x
-                            <input min="50" max="250" type="number" id="dos" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> mm
+                            <input min="50" max="250" type="number" id="dimension_inquierdo" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> x
+                            <input min="50" max="250" type="number" id="dimension_derecho" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> mm
                         </div>
                         <div class="pcb-rapido-img1">
                             <figure>
@@ -78,14 +78,13 @@
                         </div>
                         <div class="pcb-rapido-cantidad">
                             <label>Cantidad</label> <br>
-                            <select id="tres">
+                            <select id="cantidad">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
                                 <option>5</option>
                             </select>
-                            <!-- <input min="" type="number" id="tres" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> -->
                         </div>
                         <div class="pcb-rapido-img2">
                             <figure>
@@ -114,12 +113,15 @@
                                 <figcaption>1 cara.</figcaption>
                             </figure>
                         </div>
-                        <div class="pcb-rapido-solicitar">
+                        <div class="pcb-rapido-solicitar" id="show_button">
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
                         </div>
                         <div class="pcb-rapido-precio">
-                            <h1>$ <span id="data">0.00</span></h1>
-                            <h4>MXN</h4>
+                            <div id="show_precio">
+                                <h1>$ <span id="data">0.00</span></h1>
+                                <h4>MXN</h4>
+                            </div>
+                            <h3 id="error_dimensiones">Compruebe las dimensiones correctas</h3>
                         </div>
                     </div>
                 </div>
@@ -127,26 +129,45 @@
                     <div class="pcb-profecional-conteiner">
                         <div class="pcb-profecional-dimension">
                             <label>Dimensión</label> <br>
-                            <input type="text"> x
-                            <input type="text"> mm
+                            <input id="dimension_izq_pro" min="100" max="300" type="number" value="100" onKeyDown="cotizarPro();" onKeyUp="cotizarPro();" onkeypress="cotizarPro();"> x
+                            <input id="dimension_der_pro" min="100" max="300" type="number" value="100" onKeyDown="cotizarPro();" onKeyUp="cotizarPro();" onkeypress="cotizarPro();"> mm
                         </div>
                         <div class="pcb-profecional-grosor">
-                            <label>Grosor</label> <br>
-                            <select>
+                            <div id="show-grosor-uno">
+                                <label>Grosor</label> <br>
+                                <select id="grosor_pro">
                                     <option>0.4mm</option>
                                     <option>0.6mm</option>
                                     <option>0.8mm</option>
                                     <option>1.0mm</option>
                                     <option>1.2mm</option>
-                                    <option>1.6mm</option>
+                                    <option selected >1.6mm</option>
                                     <option>2.0mm</option>
-                                    <option>2.4mm</option>
                                 </select>
+                            </div>
+                            <div id="show-grosor-dos">
+                                <label>Grosor</label> <br>
+                                <select id="grosor_pro">
+                                        <option>0.8mm</option>
+                                        <option>1.0mm</option>
+                                        <option>1.2mm</option>
+                                        <option selected >1.6mm</option>
+                                        <option>2.0mm</option>
+                                    </select>
+                            </div>
+                            <div id="show-grosor-tres">
+                                <label>Grosor</label> <br>
+                                <select id="grosor_pro">
+                                            <option>1.2mm</option>
+                                            <option selected >1.6mm</option>
+                                            <option>2.0mm</option>
+                                        </select>
+                            </div>
                         </div>
                         <div class="pcb-profecional-cantidad">
                             <label>Cantidad</label><br>
-                            <select>
-                                    <option>5 pzas</option>
+                            <select id="cantidad_pro">
+                                    <option selected>5 pzas</option>
                                     <option>10 pzas</option>
                                     <option>15 pzas</option>
                                     <option>20 pzas</option>
@@ -155,21 +176,15 @@
                                     <option>50 pzas</option>
                                     <option>75 pzas</option>
                                     <option>100 pzas</option>
-                                    <option>500 pzas</option>
-                                    <option>2000 pzas</option>
                             </select>
                         </div>
                         <div class="pcb-profecional-capas">
                             <label>N. capas</label> <br>
-                            <select>
+                            <select id="capas_pro">
                                     <option>1 capa</option>
-                                    <option>2 capas</option>
+                                    <option selected>2 capas</option>
                                     <option>4 capas</option>
                                     <option>6 capas</option>
-                                    <option>8 capas</option>
-                                    <option>10 capas</option>
-                                    <option>12 capas</option>
-                                    <option>14 capas</option>
                                 </select>
                         </div>
                         <div class="pcb-profecional-observaciones">
@@ -199,23 +214,34 @@
                         </div>
                         <div class="pcb-profecional-acabado">
                             <span>Acabado</span>
-                            <input type="radio" name="acabado" id="hasl">
-                            <label for="hasl">HASL</label>
-                            <input type="radio" name="acabado" id="haslro">
-                            <label for="haslro">HASL-ROHS</label>
-                            <input type="radio" name="acabado" id="enig">
-                            <label for="enig">ENIG-RoHS</label>
+                            <div id="show_radio1">
+                                <input type="radio" name="acabado" id="hasl" checked>
+                                <label for="hasl">HASL</label>
+                            </div>
+                            <div id="show_radio2">
+                                <input type="radio" name="acabado" id="haslro">
+                                <label for="haslro">HASL-ROHS</label>
+                            </div>
+                            <div id="show_radio3">
+                                <input type="radio" name="acabado" id="enig">
+                                <label for="enig">ENIG-RoHS</label>
+                            </div>
                         </div>
                         <div class="pcb-profecional-cargas">
                             <span>Cargar archivos Gerber</span>
                             <label for="file-upload" class="custom-file-upload">Explorar</label><br>
                             <input id="file-upload" type="file">
                         </div>
-                        <div class="pcb-profecional-solicitar">
+                        <div class="pcb-profecional-solicitar" id="solicitar_pro">
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
                         </div>
-                        <div class="pcb-profecional-precio">
-                            <h1>$ <span>0.00</span></h1><h4>MXN</h4>
+                        <div id="show_precio_pro" class="pcb-profecional-precio">
+                            <h1>$ <span id="data_pro">0.00</span></h1>
+                            <h4>MXN</h4>
+                        </div>
+                        <h3 id="error_dimensiones_pro">Compruebe las dimensiones correctas</h3>
+                        <div id="cotizar-pro">
+                            <a href="#footer">Cotiza</a>
                         </div>
                     </div>
                 </div>
@@ -269,8 +295,7 @@
         <article>
             <h3>DISEÑO E IMPLEMENTACIÓN DE ELECTRÓNICA</h3>
             <h1>Convertimos tu proyecto en un prototipo funcional.</h1>
-            <p>¿Necesitas que tu idea salga a la luz? Ofrecemos desarrollo electrónico de altos estándares
-                partiendo desde un diagrama a bloques hasta un prototipo completamente funcional.
+            <p>¿Necesitas que tu idea salga a la luz? Ofrecemos desarrollo electrónico de altos estándares partiendo desde un diagrama a bloques hasta un prototipo completamente funcional.
             </p>
             <br>
             <a href="#footer">Cotiza</a>
@@ -326,8 +351,7 @@
         <article>
             <h3>STORE</h3>
             <h1>Sensores, módulos y mas...</h1>
-            <p>Tenemos artículos para desatar tu potencial, visita nuestra tienda
-                en mercado libre o descarga nuestro catalogo.
+            <p>Tenemos artículos para desatar tu potencial, visita nuestra tienda en mercado libre o descarga nuestro catalogo.
             </p>
             <a href="" class="button-blue">Catalogo</a>
             <a href=""><img class="ml-store" src="img/icons/MercadoLibre_logo.png" alt="Mercado libre"></a>

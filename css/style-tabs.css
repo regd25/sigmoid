@@ -3,7 +3,7 @@
 .r-tabs {
     position: relative;
     height: 100%;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);   
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .2);
     background-color: rgba(255, 255, 255, 0.082);
     border-radius: 10px;
     backdrop-filter: blur(20px);
@@ -15,21 +15,20 @@
 .r-tabs .r-tabs-nav .r-tabs-tab {
     position: relative;
     margin: 0;
-
-
 }
 
-.r-tabs-nav{
+.r-tabs-nav {
     border-radius: 10px 10px 0 0;
-    background-color:rgba(49, 116, 108, 0.527);
+    background-color: rgba(49, 116, 108, 0.527);
     text-align: center;
     height: 10%;
     align-items: center;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
 }
+
+
 /* Tab anchor */
 
 .r-tabs .r-tabs-nav .r-tabs-anchor {
@@ -61,7 +60,6 @@
 /* Tab panel */
 
 .r-tabs .r-tabs-panel {
-    
     height: 90%;
     padding: 0;
 }
@@ -121,7 +119,8 @@ input[type="file"] {
     text-align: center;
     width: 30%;
 }
-.pcb-profecional-cargas .custom-file-upload{
+
+.pcb-profecional-cargas .custom-file-upload {
     margin-top: 2%;
     width: 15%;
 }
@@ -129,21 +128,32 @@ input[type="file"] {
 
 /* ------- end bottom file ---- */
 
+
 /* -------------------Global--------------------*/
-input[type="text"], input[type="number"], textarea, input[type="email"], input[type="tel"], select{
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="email"],
+input[type="tel"],
+select {
     padding: 7px 0;
     padding-left: 2%;
     border: solid 0px rgba(0, 0, 0, .2);
     border-radius: 5px;
     margin-top: 2%;
     background-color: white;
-    
 }
-input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hover{
-    -webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    -moz-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+textarea:hover select:hover {
+    -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    -moz-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
+
+
 /* ------------------- pcb rapido -------------------  */
 
 .pcb-rapido-conteiner {
@@ -156,7 +166,8 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     color: white;
     padding: 2%;
 }
-.pcb-rapido-conteiner figure{
+
+.pcb-rapido-conteiner figure {
     margin: 5% 0;
     width: 100%;
     flex-flow: wrap;
@@ -164,17 +175,21 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     align-items: center;
     justify-content: space-around;
 }
-.pcb-rapido-conteiner figure figcaption{
+
+.pcb-rapido-conteiner figure figcaption {
     width: 75%
 }
+
 .pcb-rapido-conteiner img {
     width: 17%;
 }
+
 .pcb-rapido-dimension {
     width: 40%;
     height: 15%;
 }
-.pcb-rapido-dimension input{
+
+.pcb-rapido-dimension input {
     width: 30%;
 }
 
@@ -187,7 +202,8 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     width: 40%;
     height: 15%;
 }
-.pcb-rapido-cantidad input{
+
+.pcb-rapido-cantidad input {
     width: 30%;
 }
 
@@ -200,10 +216,12 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     width: 40%;
     height: 15%;
 }
-.pcb-rapido-observacion textarea{
+
+.pcb-rapido-observacion textarea {
     padding: 5% 0;
     width: 90%;
 }
+
 .pcb-rapido-img3 {
     width: 40%;
     height: 15%;
@@ -219,12 +237,12 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     height: 15%;
 }
 
-
 .pcb-rapido-solicitar {
     width: 40%;
     height: 15%;
 }
-.pcb-rapido-solicitar a.pcb-rapido-left-boton{
+
+.pcb-rapido-solicitar a.pcb-rapido-left-boton {
     display: block;
     font-size: 15px;
     text-decoration: none;
@@ -241,15 +259,22 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     width: 40%;
     height: 15%;
 }
-.pcb-rapido-precio h1{
+
+.pcb-rapido-precio h1 {
     font-size: 50px;
     margin: 0%;
     display: inline-block;
 }
-.pcb-rapido-precio h4{
+
+.pcb-rapido-precio h3 {
+    color: red;
+}
+
+.pcb-rapido-precio h4 {
     display: inline-block;
     margin: 0%;
 }
+
 
 /* ---------  end pcb rapido ----------- */
 
@@ -265,17 +290,14 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     height: 96%;
     padding: 2%;
     color: white;
-    
 }
-
-
-
 
 .pcb-profecional-dimension {
     width: 45%;
     height: 15%;
 }
-.pcb-profecional-dimension input{
+
+.pcb-profecional-dimension input {
     width: 30%;
 }
 
@@ -286,19 +308,24 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
 .pcb-profecional-cantidad {
     width: 22.5%;
 }
-.pcb-profecional-cantidad input{
+
+.pcb-profecional-cantidad input {
     width: 90%;
 }
+
 .pcb-profecional-capas {
     width: 22.5%;
 }
-.pcb-profecional-capas input{
+
+.pcb-profecional-capas input {
     width: 60%;
 }
+
 .pcb-profecional-observaciones {
     width: 45%;
 }
-.pcb-profecional-observaciones textarea{
+
+.pcb-profecional-observaciones textarea {
     padding: 5% 0;
     width: 90%;
 }
@@ -309,68 +336,81 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     display: flex;
     flex-wrap: wrap;
 }
-.pcb-profecional-colores .verde{
+
+.pcb-profecional-colores .verde {
     background-color: #57BE42;
     border: solid 2px #57BE42;
 }
-.pcb-profecional-colores .rojo{
+
+.pcb-profecional-colores .rojo {
     background-color: #F3493C;
     border: solid 2px #F3493C;
 }
-.pcb-profecional-colores .amarillo{
+
+.pcb-profecional-colores .amarillo {
     background-color: #EEE831;
     border: solid 2px #EEE831
 }
-.pcb-profecional-colores .azul{
+
+.pcb-profecional-colores .azul {
     background-color: rgb(50, 139, 255);
     border: solid 2px rgb(50, 139, 255);
 }
-.pcb-profecional-colores .blanco{
+
+.pcb-profecional-colores .blanco {
     background-color: white;
     border: solid 2px rgb(0, 0, 0);
     color: black;
 }
-.pcb-profecional-colores .negro{
+
+.pcb-profecional-colores .negro {
     background-color: black;
     border: solid 2px rgb(0, 0, 0);
 }
-.pcb-profecional-colores span{  
+
+.pcb-profecional-colores span {
     display: block;
     margin: 2% auto;
     width: 100%;
 }
+
 .pcb-profecional-colores input[type=radio] {
     position: absolute;
-  visibility: hidden;
-  display: none;
+    visibility: hidden;
+    display: none;
 }
-.pcb-profecional-colores label{
+
+.pcb-profecional-colores label {
     display: inline-block;
     cursor: pointer;
-    
     border-radius: 5px;
     width: 15%;
     text-align: center;
     padding: 1% 0;
 }
-.pcb-profecional-colores input[type=radio]:checked + label{
+
+.pcb-profecional-colores input[type=radio]:checked+label {
     border: solid 2px rgb(255, 255, 255);
     transition-duration: .3s;
 }
+
 .pcb-profecional-acabado {
     width: 95%;
 }
-.pcb-profecional-acabado span{  
+
+.pcb-profecional-acabado span {
     display: block;
     margin: 2% auto;
     width: 100%;
 }
+
 .pcb-profecional-acabado input[type=radio] {
     position: absolute;
-  visibility: hidden;
-  display: none;
+    visibility: hidden;
+    display: none;
 }
-.pcb-profecional-acabado label{
+
+.pcb-profecional-acabado label {
     display: inline-block;
     cursor: pointer;
     border: solid 2px white;
@@ -381,9 +421,12 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     text-align: center;
     padding: 1% 0;
 }
-.pcb-profecional-acabado input[type=radio]:checked + label{
+
+.pcb-profecional-acabado input[type=radio]:checked+label {
     border: solid 2px gray;
-    transition-duration: .5s;
+    transition-duration: .2s;
+    background: black;
+    color: white;
 }
 
 .pcb-profecional-precio {
@@ -391,15 +434,18 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     margin-top: -7%;
     text-align: center;
 }
-.pcb-profecional-precio h1{
+
+.pcb-profecional-precio h1 {
     font-size: 50px;
     margin: 0%;
     display: inline-block;
 }
-.pcb-profecional-precio h4{
+
+.pcb-profecional-precio h4 {
     display: inline-block;
-    margin: 0%; 
+    margin: 0%;
 }
+
 .pcb-profecional-cargas {
     width: 95%;
     height: 15%;
@@ -408,7 +454,8 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
 .pcb-profecional-solicitar {
     width: 45%;
 }
-.pcb-profecional-solicitar a{
+
+.pcb-profecional-solicitar a {
     display: block;
     font-size: 15px;
     text-decoration: none;
@@ -422,14 +469,15 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
 }
 
 
-
 /* ------------ end pcb profecional -----------  */
 
 
 /* ------------ modal general -----------------  */
+
 .modal {
     background-color: #f2f2f2 !important;
 }
+
 .form-modal {
     display: flex;
     flex-direction: row;
@@ -439,10 +487,16 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     width: 94%;
     padding: 3%;
 }
-.form-modal input[type="text"],.form-modal input[type="number"],.form-modal textarea,.form-modal input[type="tel"],.form-modal input[type="email"], .form-modal select{
-    -webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    -moz-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+
+.form-modal input[type="text"],
+.form-modal input[type="number"],
+.form-modal textarea,
+.form-modal input[type="tel"],
+.form-modal input[type="email"],
+.form-modal select {
+    -webkit-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    -moz-box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
 }
 
 .form-modal h2 {
@@ -478,15 +532,18 @@ input[type="text"]:hover, input[type="number"]:hover, textarea:hover select:hove
     width: 100%;
     margin-top: 2%;
 }
+
 textarea#direccion {
     margin-bottom: 5%;
 }
+
 .form-modal-right p {
     font-size: 9px;
     width: 100%;
     margin: 1% 0;
 }
-.form-modal-right button{
+
+.form-modal-right button {
     font-size: 15px;
     text-decoration: none;
     color: #076FFB;
@@ -496,6 +553,6 @@ textarea#direccion {
     background: none;
     margin: 3% 0;
 }
-]
 
+]
 /* ------------ end modal -----------------  */
