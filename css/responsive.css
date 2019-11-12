@@ -215,9 +215,11 @@ header label {
     }
     .har-entregables-data figure {
         width: 100%;
+        text-align: center;
     }
     .har-entregables-data figure img{
-        width: 64px;
+        width: 80px;
+        
     }
     .har-entregables-data div {
         width: 100%; 
@@ -369,7 +371,7 @@ header label {
         margin-bottom: 10%;
     }
     .har-diseno {
-        height: 100vh;
+        height: 100%;
  
     }
     .har-diseno figure {
@@ -409,7 +411,7 @@ header label {
     }
     .har-store a
     img.ml-store{
-    width: 140px;
+    width: 120px;
     margin-bottom: -12px;
     margin-left: 0%;
     }

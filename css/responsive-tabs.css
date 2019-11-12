@@ -30,4 +30,16 @@
     .r-tabs .r-tabs-accordion-title {
         display: block;
     }
+    .pcb-rapido-precio h1 {
+        font-size: 38px !important;
+    }
+    .pcb-profecional-colores label{
+        width: 25% !important;
+        margin-top: 1%;
+    }
+    .pcb-profecional-precio h1 {
+        font-size: 38px !important;
+    }
+}
+@media only screen and (max-width: 548px) {
 }

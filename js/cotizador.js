@@ -30,7 +30,7 @@ function cotizar1() {
                 dato1 = 300
             }
         } else {
-            $('#error_dimensiones').text('La dimensiones estan malas verifique')
+            $('#error_dimensiones').text('Verifique sus dimensiones')
             $("#error_dimensiones").show("slow");
             $("#show_precio").hide("slow");
             $("#show_button").hide("slow");
@@ -53,7 +53,7 @@ function cotizar1() {
                 dato1 = 300
             }
         } else {
-            $('#error_dimensiones').text('La dimensiones estan malas verifique')
+            $('#error_dimensiones').text('Verifique sus dimensiones')
             $("#error_dimensiones").show("slow");
             $("#show_precio").hide("slow");
             $("#show_button").hide("slow");

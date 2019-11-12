@@ -309,7 +309,7 @@ textarea:hover select:hover {
     width: 22.5%;
 }
 
-.pcb-profecional-cantidad input {
+.pcb-profecional-cantidad select {
     width: 90%;
 }
 
@@ -317,8 +317,8 @@ textarea:hover select:hover {
     width: 22.5%;
 }
 
-.pcb-profecional-capas input {
-    width: 60%;
+.pcb-profecional-capas select {
+    width: 90%;
 }
 
 .pcb-profecional-observaciones {
@@ -396,6 +396,8 @@ textarea:hover select:hover {
 
 .pcb-profecional-acabado {
     width: 95%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .pcb-profecional-acabado span {
@@ -409,7 +411,9 @@ textarea:hover select:hover {
     visibility: hidden;
     display: none;
 }
-
+#show_radio1, #show_radio2, #show_radio3{
+    width: 33.3%;
+}
 .pcb-profecional-acabado label {
     display: inline-block;
     cursor: pointer;
@@ -417,7 +421,7 @@ textarea:hover select:hover {
     background-color: white;
     color: black;
     border-radius: 5px;
-    width: 25%;
+    width: 90%;
     text-align: center;
     padding: 1% 0;
 }
@@ -554,5 +558,5 @@ textarea#direccion {
     margin: 3% 0;
 }
 
-]
+
 /* ------------ end modal -----------------  */

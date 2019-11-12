@@ -50,6 +50,19 @@ h4 {
     font-size: 15px;
     text-decoration: none;
     color: white;
+    cursor: pointer;
+}
+.button-white {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 10%;
+    padding: 5px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
 }
 
 /* inicio de menu */
@@ -713,19 +726,20 @@ section .info {
     align-items: center;
 }
 .har-entregables-data figure {
+    text-align: end;
     margin: 0;
-    width: 12%;
-    padding: 4%;
+    width: 24%;
+    padding: 2%;
 }
 .har-entregables-data figure img{
-    width: 100%;
+    width: 80px;
 }
 .har-entregables-data div {
-    width: 80%; 
+    width: 70%; 
 }
 .har-entregables article{
-    padding: 5%;
-    width: 35%;
+    padding: 0%;
+    width: 45%;
 }
 .har-entregables .hardware-img{
     width: 51%;
