@@ -4,119 +4,158 @@ $("#show-grosor-tres").hide();
 $("#cotizar-pro").hide();
 $("#error_dimensiones_pro").hide();
 
-function cotizar1() {
 
+// Funcion select que ejecuta CNC Simple
+$("#cantidad").change(function() {
+    Cnc();
+});
+
+// Funcion CNC Simple ejecutable
+function Cnc() {
     var dato1 = 0;
-    var sumaTotal = 0;
     variable1 = parseInt(document.getElementById('dimension_inquierdo').value);
     variable2 = parseInt(document.getElementById('dimension_derecho').value);
     cantidad = parseInt(document.getElementById('cantidad').value);
 
     if (variable1 > variable2) {
-        if (variable1 > 50 && variable1 <= 250 && variable2 <= 150) {
-            console.log('voy a verificar la varible 1')
-            $("#error_dimensiones").hide("slow");
-            $("#show_precio").show("slow");
-            $("#show_button").show("slow");
-            if (variable1 > 50 && variable1 <= 100) {
+        if (variable1 > 0 && variable1 <= 250 && variable2 <= 150) {
+            HideErrors();
+            if (variable1 > 0 && variable1 <= 50) {
                 dato1 = 100
-            } else if (variable1 > 100 && variable1 <= 150) {
+            } else if (variable1 > 50 && variable1 <= 100) {
                 dato1 = 150
-            } else if (variable1 > 150 && variable1 <= 200) {
+            } else if (variable1 > 100 && variable1 <= 150) {
                 dato1 = 200
-            } else if (variable1 > 200 && variable1 < 250) {
+            } else if (variable1 > 150 && variable1 < 200) {
                 dato1 = 250
             } else {
                 dato1 = 300
             }
         } else {
-            $('#error_dimensiones').text('Verifique sus dimensiones')
-            $("#error_dimensiones").show("slow");
-            $("#show_precio").hide("slow");
-            $("#show_button").hide("slow");
+            ShowErrors();
         }
     } else {
-        if (variable2 > 50 && variable2 <= 250 && variable1 <= 150) {
-            console.log('voy a verificar la varible 2')
-            $("#error_dimensiones").hide("slow");
-            $("#show_precio").show("slow");
-            $("#show_button").show("slow");
-            if (variable2 > 50 && variable2 <= 100) {
+        if (variable2 > 0 && variable2 <= 250 && variable1 <= 150) {
+            HideErrors();
+            if (variable2 > 0 && variable2 <= 50) {
                 dato1 = 100
-            } else if (variable2 > 100 && variable2 <= 150) {
+            } else if (variable2 > 50 && variable2 <= 100) {
                 dato1 = 150
-            } else if (variable2 > 150 && variable2 <= 200) {
+            } else if (variable2 > 100 && variable2 <= 150) {
                 dato1 = 200
-            } else if (variable2 > 200 && variable2 < 250) {
+            } else if (variable2 > 150 && variable2 < 200) {
                 dato1 = 250
             } else {
                 dato1 = 300
             }
         } else {
-            $('#error_dimensiones').text('Verifique sus dimensiones')
-            $("#error_dimensiones").show("slow");
-            $("#show_precio").hide("slow");
-            $("#show_button").hide("slow");
+            ShowErrors();
         }
     }
+    Quantity(cantidad, dato1);
+}
+
+// Funcion de la cantidad
+function Quantity(cantidad, valor) {
+    var sumaTotal = 0;
     if (cantidad <= 3) {
-        sumaTotal = dato1 * cantidad
+        sumaTotal = valor * cantidad
         $('#data').text(sumaTotal.toString())
     } else {
         if (cantidad == 4) {
-            sumaTotal = dato1 * 3.75
+            sumaTotal = valor * 3.75
             $('#data').text(sumaTotal.toString())
         } else {
-            sumaTotal = dato1 * 4.5
+            sumaTotal = valor * 4.5
             $('#data').text(sumaTotal.toString())
         }
     }
 }
 
+// Funciones de validaciones 
 
-function cotizarPro() {
+function HideErrors() {
+    $("#error_dimensiones").hide("slow");
+    $("#show_precio").show("slow");
+    $("#show_button").show("slow");
+}
+
+function ShowErrors() {
+    $('#error_dimensiones').text('Verifique sus dimensiones')
+    $("#error_dimensiones").show("slow");
+    $("#show_precio").hide("slow");
+    $("#show_button").hide("slow");
+}
+
+
+
+// ---------------- Cotizador CNC PRO ---------------------
+// Funciones select que ejecuta CNC Pro
+$("#grosor_pro").change(function() {
+    CncPro();
+    HideFinish();
+});
+$("#cantidad_pro").change(function() {
+    CncPro();
+});
+$("#capas_pro").change(function() {
+    CncPro();
+    HideThickness();
+});
+$("input[name='acabado']:radio").change(function() {
+    CncPro();
+})
+
+
+
+function CncPro() {
     dimension_izq = parseInt(document.getElementById('dimension_izq_pro').value);
     dimension_der = parseInt(document.getElementById('dimension_der_pro').value);
     cantidad_pro = parseInt(document.getElementById('cantidad_pro').value);
     capas_pro = parseInt(document.getElementById('capas_pro').value);
     grosor_pro = parseFloat(document.getElementById('grosor_pro').value);
-    console.log(grosor_pro)
-    if (dimension_izq >= 100 && dimension_izq <= 300 && dimension_der >= 100 && dimension_der <= 300) {
-        $("#error_dimensiones_pro").hide("slow");
-        $("#show_precio_pro").show("slow");
-        $("#solicitar_pro").show("slow");
-        $("#cotizar-pro").hide();
-        if (dimension_izq >= 200 || dimension_der >= 200) {
-            $("#show_precio_pro").hide("slow");
-            $("#solicitar_pro").hide("slow");
-            $("#cotizar-pro").show("slow");
+    var price = 0;
+    acabado_pro = $("input[name='acabado']:checked").val()
+    if (dimension_izq > 0 && dimension_izq <= 250 && dimension_der > 0 && dimension_der <= 250 &&
+        cantidad_pro == 5 && capas_pro <= 2 && grosor_pro >= .6 && grosor_pro <= 1.6 && acabado_pro === "HASL") {
+        HideErrorsPro();
+        if (dimension_der > dimension_izq) {
+            price = ValidatorPrice(dimension_der);
+            $('#price_pro').text(price.toString())
         } else {
-            $("#show_precio_pro").show("slow");
-            $("#solicitar_pro").show("slow");
-            if (cantidad_pro >= 15 || capas_pro > 3) {
-                $("#show_precio_pro").hide("slow");
-                $("#solicitar_pro").hide("slow");
-                $("#cotizar-pro").show("slow");
-            } else {
-                if (grosor_pro == 0.4) {
-                    $("#show_radio1").hide("slow");
-                    $("#show_radio2").hide("slow");
-                } else {
-                    console.log('xdxdxd')
-                    $("#show_radio1").show("slow");
-                    $("#show_radio2").show("slow");
-                }
-            }
+            price = ValidatorPrice(dimension_izq)
+            $('#price_pro').text(price.toString())
         }
     } else {
-        $("#error_dimensiones_pro").show("slow");
-        $("#show_precio_pro").hide("slow");
-        $("#solicitar_pro").hide("slow");
-        $("#cotizar-pro").hide("slow");
+        CncProSpecial(dimension_izq, dimension_der);
     }
 }
 
-function ocultarGrosor() {
+// Funciones logicas y matematicas
+
+function ValidatorPrice(dimension) {
+    if (dimension > 0 && dimension <= 50) {
+        return 600
+    } else if (dimension > 50 && dimension <= 100) {
+        return 800
+    } else if (dimension > 100 && dimension <= 150) {
+        return 1000
+    } else if (dimension > 150 && dimension <= 200) {
+        return 1200
+    } else {
+        return 1400
+    }
+}
+
+function CncProSpecial(dimension_one, dimension_two) {
+    if (dimension_one > 0 && dimension_one <= 400 && dimension_two > 0 && dimension_two <= 400) {
+        ShowQuote();
+    } else {
+        ShowErrorsPro();
+    }
+}
+
+function HideThickness() {
     capas_validar = parseInt(document.getElementById('capas_pro').value);
     if (capas_validar == 4) {
         $("#show-grosor-uno").hide();
@@ -133,17 +172,40 @@ function ocultarGrosor() {
     }
 }
 
-$("#cantidad").change(function() {
-    cotizar1();
-});
-$("#cantidad_pro").change(function() {
-    cotizarPro();
-});
-$("#capas_pro").change(function() {
-    cotizarPro();
-    ocultarGrosor();
-});
+function HideFinish() {
+    grosor_validate = parseFloat(document.getElementById('grosor_pro').value);
+    if (grosor_validate === 0.4) {
+        $("#show_radio1").hide("slow")
+        $("#show_radio2").hide("slow")
+    } else {
+        $("#show_radio1").show("slow")
+        $("#show_radio2").show("slow")
+    }
+}
 
-$("#grosor_pro").change(function() {
-    cotizarPro();
-});
+// Funciones de validaciones de errores Cnc PRO
+function HideErrorsPro() {
+    $("#error_dimensiones_pro").hide("slow");
+    $("#show_precio_pro").show("slow");
+    $("#solicitar_pro").show("slow");
+    $("#cotizar-pro").hide();
+}
+
+function ShowErrorsPro() {
+    $("#error_dimensiones_pro").show("slow");
+    $("#show_precio_pro").hide("slow");
+    $("#solicitar_pro").hide("slow");
+    $("#cotizar-pro").hide("slow");
+}
+
+function HideQuote() {
+    $("#show_precio_pro").show("slow");
+    $("#solicitar_pro").show("slow");
+    $("#cotizar-pro").hide("slow");
+}
+
+function ShowQuote() {
+    $("#show_precio_pro").hide("slow");
+    $("#solicitar_pro").hide("slow");
+    $("#cotizar-pro").show("slow");
+}

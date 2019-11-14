@@ -67,8 +67,8 @@
                     <div class="pcb-rapido-conteiner">
                         <div class="pcb-rapido-dimension">
                             <label>Dimension</label> <br>
-                            <input min="50" max="250" type="number" id="dimension_inquierdo" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> x
-                            <input min="50" max="250" type="number" id="dimension_derecho" onKeyDown="cotizar1();" onKeyUp="cotizar1();" onkeypress="cotizar1();"> mm
+                            <input min="50" max="250" type="number" id="dimension_inquierdo" onKeyDown="Cnc();" onKeyUp="Cnc();" onkeypress="Cnc();"> x
+                            <input min="50" max="250" type="number" id="dimension_derecho" onKeyDown="Cnc();" onKeyUp="Cnc();" onkeypress="Cnc();"> mm
                         </div>
                         <div class="pcb-rapido-img1">
                             <figure>
@@ -129,8 +129,8 @@
                     <div class="pcb-profecional-conteiner">
                         <div class="pcb-profecional-dimension">
                             <label>Dimensión</label> <br>
-                            <input id="dimension_izq_pro" min="100" max="300" type="number" value="100" onKeyDown="cotizarPro();" onKeyUp="cotizarPro();" onkeypress="cotizarPro();"> x
-                            <input id="dimension_der_pro" min="100" max="300" type="number" value="100" onKeyDown="cotizarPro();" onKeyUp="cotizarPro();" onkeypress="cotizarPro();"> mm
+                            <input id="dimension_izq_pro" min="100" max="300" type="number" value="100" onKeyDown="CncPro();" onKeyUp="CncPro();" onkeypress="CncPro();"> x
+                            <input id="dimension_der_pro" min="100" max="300" type="number" value="100" onKeyDown="CncPro();" onKeyUp="CncPro();" onkeypress="CncPro();"> mm
                         </div>
                         <div class="pcb-profecional-grosor">
                             <div id="show-grosor-uno">
@@ -215,15 +215,15 @@
                         <div class="pcb-profecional-acabado">
                             <span>Acabado</span>
                             <div id="show_radio1">
-                                <input type="radio" name="acabado" id="hasl" checked>
+                                <input type="radio" name="acabado" id="hasl" value="HASL" checked>
                                 <label for="hasl">HASL</label>
                             </div>
                             <div id="show_radio2">
-                                <input type="radio" name="acabado" id="haslro">
+                                <input type="radio" name="acabado" value="HASL-ROHS" id="haslro">
                                 <label for="haslro">HASL-ROHS</label>
                             </div>
                             <div id="show_radio3">
-                                <input type="radio" name="acabado" id="enig">
+                                <input type="radio" name="acabado" value="ENIG-RoHS" id="enig">
                                 <label for="enig">ENIG-RoHS</label>
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                             <a class="pcb-rapido-left-boton" href="#ex1" rel="modal:open">Solicitar</a>
                         </div>
                         <div id="show_precio_pro" class="pcb-profecional-precio">
-                            <h1>$ <span id="data_pro">0.00</span></h1>
+                            <h1>$ <span id="price_pro">0.00</span></h1>
                             <h4>MXN</h4>
                         </div>
                         <h3 id="error_dimensiones_pro">Compruebe las dimensiones correctas</h3>
