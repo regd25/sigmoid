@@ -42,4 +42,16 @@
     }
 }
 @media only screen and (max-width: 548px) {
+    #ex1 {
+        margin-top: 20%;
+    }
+    .form-modal{
+        height: 100%;
+        }
+    .form-modal-left {
+        width: 100% !important;
+    }
+    .form-modal-right {
+        width: 100% !important;
+    }
 }
