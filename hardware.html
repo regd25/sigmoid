@@ -241,14 +241,37 @@
                         </div>
                         <h3 id="error_dimensiones_pro">Compruebe las dimensiones correctas</h3>
                         <div id="cotizar-pro">
-                            <a href="#footer" class="button-white">Cotiza</a>
+                            <a href="#ex2" rel="modal:open" class="button-white">Cotiza</a>
                         </div>
                     </div>
                 </div>
-                <div id="tab-3">
-                    <p style="color: white;">Mauris facilisis elit ut sem eleifend accumsan molestie sit amet dolor. Pellentesque dapibus arcu eu lorem laoreet, vitae cursus metus mattis. Nullam eget porta enim, eu rutrum magna. Duis quis tincidunt sem, sit amet faucibus magna.
-                        Integer commodo, turpis consequat fermentum egestas, leo odio posuere dui, elementum placerat eros erat id augue. Nullam at eros eget urna vestibulum malesuada vitae eu mauris. Aliquam interdum rhoncus velit, quis scelerisque leo
-                        viverra non. Suspendisse id feugiat dui. Nulla in aliquet leo. Proin vel magna sed est gravida rhoncus. Mauris lobortis condimentum nibh, vitae bibendum tortor vehicula ac. Curabitur posuere arcu eros.</p>
+                <div  id="tab-3">
+                    <div class="diseno-container">
+                        <div>
+                            <p>Realizamos el diseño de tu PCB a partir de tu esquematico.</p>
+                        </div>
+                        <figure>
+                            <img src="img/icons/ic.png" alt="schmatic">
+                        </figure>
+                        <div>
+                            <p>Diseñamos las librerias de tus componentes a partir de un datasheet. 
+                                Solo necesitamos el numero de parte.</p>
+                        </div>
+                        <figure>
+                            <img src="img/icons/dimension.png" alt="libraries">
+                        </figure>
+                        <div>
+                            <p>Es importante que nos hagas saber el uso de voltajes y corrientes elevadas
+                                para un correcto diseño.
+                            </p>
+                        </div>
+                        <figure>
+                            <img src="img/icons/grosor.png" alt="high mesures">
+                        </figure>
+                        <div class="cotiza-diseno">
+                            <a href="#ex3" rel="modal:open" class="button-white">Cotiza</a>
+                        </div>
+                    </div>
                 </div>
                 <div id="ex1" class="modal" style="max-width: 900px; padding: 5px 25px;">
                     <section class="form-modal">
@@ -284,6 +307,73 @@
                     </section>
                     <!-- <a href="#" rel="modal:close">Cerrar Modal</a> -->
                 </div>
+                <div id="ex2" class="modal" style="max-width: 900px; padding: 5px 25px;">
+                    <section class="form-modal">
+                        <h2>Cotización personalizada</h2>
+                        <article class="form-modal-left">
+                            <label>Nombre</label>
+                            <input type="text">
+                            <label>Apellido</label>
+                            <input type="text">
+                            <label>Teléfono</label>
+                            <input type="tel">
+                            <label>Email</label>
+                            <input type="email">
+                        </article>
+                        <article class="form-modal-right">
+                            <label>Método de pago</label>
+                            <select>
+                                <option>Paypal</option>
+                                <option>Deposito</option>
+                                <option>Mercado Pago</option>
+                                <option>Pago contra entrega</option>
+                            </select>
+                            <label>Dirección</label>
+                            <textarea name="direccion" id="direccion" cols="30" rows="5"></textarea>
+                            <p>* El tiempo de entrega es de 10 a 15 días hábiles.</p>
+                            <p>* Entrega a domicilio incluida (Mérida Yucatán)</p>
+                            <p>* Envió resto de la republica $180 MXN</p>
+                            <p>* Una vez solicitado el pedido no hay modificaciones. </p>
+                            <p>* No nos hacemos responsables de la funcionalidad de su diseño</p>
+                            <button>Cotizar</button>
+                        </article>
+                    </section>
+                    <!-- <a href="#" rel="modal:close">Cerrar Modal</a> -->
+                </div>
+                <div id="ex3" class="modal" style="max-width: 900px; padding: 5px 25px;">
+                        <section class="form-modal">
+                            <h2>Datos de contácto</h2>
+                            <article class="form-modal-left">
+                                <label>Nombre</label>
+                                <input type="text">
+                                <label>Apellido</label>
+                                <input type="text">
+                                <label>Teléfono</label>
+                                <input type="tel">
+                                <label>Email</label>
+                                <input type="email">
+                            </article>
+                            <article class="form-modal-right">
+                                <label>Método de pago</label>
+                                <select>
+                                    <option>Paypal</option>
+                                    <option>Deposito</option>
+                                    <option>Mercado Pago</option>
+                                    <option>Pago contra entrega</option>
+                                </select>
+                                <div class="carga-diseno">
+                                    <span>Cargar bosquejo de pcb, lista de componentes y esquematico en .ZIP</span>
+                                    <label for="file-upload" class="button-blue">Explorar</label>
+                                    <input id="file-upload" type="file">
+                                </div>
+                                <p>* Tiempo de entrega de 48hrs.</p>
+                                <p>* Una vez solicitado el pedido no hay modificaciones. </p>
+                                <p>* No nos hacemos responsables de la funcionalidad de su diseño esquematico</p>
+                                <button>Cotizar</button>
+                            </article>
+                        </section>
+                        <!-- <a href="#" rel="modal:close">Cerrar Modal</a> -->
+                    </div>
             </div>
 
         </article>

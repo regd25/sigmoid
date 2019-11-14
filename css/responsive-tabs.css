@@ -42,7 +42,7 @@
     }
 }
 @media only screen and (max-width: 548px) {
-    #ex1 {
+    #ex1, #ex2, #ex3 {
         margin-top: 20%;
     }
     .form-modal{

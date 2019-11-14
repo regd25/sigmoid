@@ -475,7 +475,36 @@ textarea:hover select:hover {
 
 /* ------------ end pcb profecional -----------  */
 
+/* ------------ diseño -----------------  */
+.diseno-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 96%;
+    height: 96%;
+    color: white;
+    padding: 2%;
+}
 
+.diseno-container div {
+    width: 60%;
+    align-self: center;
+    text-align: initial;
+}
+.diseno-container figure {
+    width: 20%;
+    margin: 0%;
+    align-self: center;
+}
+.diseno-container figure img {
+    width: 55%;
+}
+
+.cotiza-diseno a {
+   width: 40%;
+   margin: 0 20%
+}
 /* ------------ modal general -----------------  */
 
 .modal {
@@ -557,6 +586,14 @@ textarea#direccion {
     background: none;
     margin: 3% 0;
 }
-
+.carga-diseno{
+    margin-top: 4%;
+    height: 100%;
+}
+.carga-diseno label{
+    margin-top: 5%;
+    display: block;
+    width: 25%;
+}
 
 /* ------------ end modal -----------------  */
