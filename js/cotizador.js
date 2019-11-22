@@ -87,7 +87,18 @@ function ShowErrors() {
     $("#show_button").hide("slow");
 }
 
+function ShowErrorsFile() {
+    $('#error_dimensiones').text('Tamaño de archivo pasa los 10mb')
+    $("#error_dimensiones").show("slow");
+    $("#show_precio").hide("slow");
+    $("#show_button").hide("slow");
+}
 
+function HideErrorsFile() {
+    $("#error_dimensiones").hide("slow");
+    $("#show_precio").show("slow");
+    $("#show_button").show("slow");
+}
 
 // ---------------- Cotizador CNC PRO ---------------------
 // Funciones select que ejecuta CNC Pro
@@ -205,7 +216,52 @@ function HideQuote() {
 }
 
 function ShowQuote() {
+    $("#error_dimensiones_pro").hide("slow");
     $("#show_precio_pro").hide("slow");
     $("#solicitar_pro").hide("slow");
     $("#cotizar-pro").show("slow");
 }
+
+
+// file-upload
+document.getElementById("file-upload").addEventListener("change", function () {
+    var fullPath = document.getElementById('file-upload').value;
+    var fileName = fullPath.split(/(\\|\/)/g).pop();  // fetch the file name
+    document.getElementById("file-text").innerHTML = fileName;  // display the file name
+    //console.log(this.files[0])
+    let mb = parseInt(this.files[0].size) / 1000000
+    if (mb < 10) {
+        HideErrorsFile()
+    } else {
+        ShowErrorsFile()
+    }
+}, false);
+
+document.getElementById("file-upload-pro").addEventListener("change", function () {
+    var fullPath = document.getElementById('file-upload-pro').value;
+    var fileName = fullPath.split(/(\\|\/)/g).pop();  // fetch the file name
+    document.getElementById("file-text-pro").innerHTML = fileName;  // display the file name
+    let mb = parseInt(this.files[0].size) / 1000000
+    if (mb < 10) {
+        HideErrorsFile()
+    } else {
+        ShowErrorsFile()
+    }
+}, false);
+
+
+// Pedido
+
+$(document).ready(function () {
+    $('#pedido').on('click', function (e) {
+        dato_is = $('#dimension_inquierdo').val()
+        file = $('#file-upload').val()
+        console.log(file)
+        $('#left-Id').val(dato_is)
+        $('#right-Id').val(dato_is)
+        $('#cantidad-Id').val(dato_is)
+        e.preventDefault();
+        var dataString = $('#form-contacto').serialize();
+        console.log('Datos serializados: ' + dataString);
+    });
+});
