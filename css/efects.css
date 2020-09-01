@@ -11,7 +11,7 @@
               -o-transition: all 1s ease-in-out;
               transition: all 1s ease-in-out;
           }
-          
+
           #efecto1.visible {
               opacity: 1;
               -webkit-transform: translateX(30px);
@@ -20,7 +20,7 @@
               -o-transform: translateX(30px);
               transform: translateX(30px);
           }
-          
+
           #efecto2 {
               opacity: 0;
               -webkit-transform: none;
@@ -34,7 +34,7 @@
               -o-transition: all 1s ease-in-out;
               transition: all 1s ease-in-out;
           }
-          
+
           #efecto2.visible {
               opacity: 1;
               -webkit-transform: translateX(-30px);
@@ -43,7 +43,7 @@
               -o-transform: translateX(-30px);
               transform: translateX(-30px);
           }
-          
+
           .efecto3 {
               opacity: 0;
               -webkit-transform: translateX(-40px);
@@ -57,7 +57,7 @@
               -o-transition: all 0.6s ease-out;
               transition: all 0.6s ease-out;
           }
-          
+
           .efecto3.visible {
               opacity: 1;
               -webkit-transform: translateX(-30px);
@@ -66,6 +66,7 @@
               -o-transform: translateX(-30px);
               transform: translateX(-30px);
           }
+
           /* .efecto3.visible {
                 opacity: 1;
                 -webkit-transform: none;
@@ -74,20 +75,20 @@
                 -o-transform: none;
                 transform: none;
             } */
-          
+
           .efecto3:nth-child(2) {
               margin-left: 150px;
           }
-          
+
           .efecto3:nth-child(3) {
               margin-top: 100px;
           }
-          
+
           .efecto3:nth-child(4) {
               margin-top: 100px;
               margin-left: 150px;
           }
-          
+
           #efecto4 {
               opacity: 0;
               -webkit-transform: none;
@@ -101,7 +102,7 @@
               -o-transition: all 1s ease-in-out;
               transition: all 1s ease-in-out;
           }
-          
+
           #efecto4.visible {
               opacity: 1;
               -webkit-transform: translateX(30px);
@@ -110,7 +111,7 @@
               -o-transform: translateX(30px);
               transform: translateX(30px);
           }
-          
+
           #efecto5 {
               opacity: 0;
               -webkit-transform: none;
@@ -124,7 +125,7 @@
               -o-transition: all 1s ease-in-out;
               transition: all 1s ease-in-out;
           }
-          
+
           #efecto5.visible {
               opacity: 1;
               -webkit-transform: translateX(-30px);
@@ -133,7 +134,7 @@
               -o-transform: translateX(-30px);
               transform: translateX(-30px);
           }
-          
+
           @media screen and (max-width:992px) {
               #efecto4.visible {
                   opacity: 1;
@@ -152,7 +153,7 @@
                   transform: translateX(-20px);
               }
           }
-          
+
           @media screen and (max-width:768px) {
               #efecto1.visible {
                   opacity: 1;
@@ -200,7 +201,7 @@
                   transform: translateX(5px);
               }
           }
-          
+
           @media screen and (max-width: 576px) {
               #efecto1.visible {
                   opacity: 1;
