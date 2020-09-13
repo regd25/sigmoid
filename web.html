@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sigmoid</title>
+    <title>Sigmoid Web</title>
     <link rel="icon" type="image/png" href="img/icons/favicon.png">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -14,48 +14,7 @@
     <link rel="stylesheet" href="css/efects.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
-    <style>
-    .range {
-  position: relative;
-}
-.range__input {
-  width: 100%;
-  -webkit-appearance: none;
-}
-.range__input::-webkit-slider-runnable-track {
-  background: #ccc;
-}
-.range__input::-moz-range-thumb {
-  background: #ccc;
-}
-.range__input::-ms-track {
-  background: transparent;
-}
-.range__input::-ms-fill-lower {
-  background: #e1e1e1;
-  border-radius: 10px;
-}
-.range__input::-ms-fill-upper {
-  background: #eee;
-}
-.range__list {
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  overflow: hidden;
-  margin-top: 6px;
-}
-.range__list__opt:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: auto;
-  padding-left: 3px;
-  text-indent: 0;
-}
-    
-    
-    </style>
+
 </head>
 
 <body>
@@ -66,13 +25,13 @@
         <nav id="site-nav" class="site-nav">
             <ul>
                 <li>
-                    <a onClick="cambiarClase()" data-scroll href="#top">INICIO</a>
+                    <a onClick="cambiarClase()" data-scroll href="index.html">INICIO</a>
                 </li>
                 <li>
-                    <a onClick="cambiarClase()" data-scroll href="#nosotros">NOSOTROS</a>
+                    <a onClick="cambiarClase()" data-scroll href="/index.html#nosotros">NOSOTROS</a>
                 </li>
                 <li>
-                    <a onClick="cambiarClase()" data-scroll href="#servicios">SERVICIOS</a>
+                    <a onClick="cambiarClase()" data-scroll href="index.html#servicios">SERVICIOS</a>
                 </li>
                 <li>
                     <a onClick="cambiarClase()" data-scroll href="#conocenos">CONÓCENOS</a>
@@ -83,70 +42,42 @@
             <div class="hamburger"></div>
         </div>
     </header>
-    <!-- <header class="other-head">
-        <input type="checkbox" id="btn-menu" />
-        <label for="btn-menu"><i class="fa fa-bars"></i></label>
-        <nav class="menu">
-            <figure>
-                <a href="index.html">
-                    <img src="img/Sigmoid.png" id="logo">
-                </a>
-            </figure>
-            <div>
-                <ul>
-                    <li>
-                        <a href="index.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a data-scroll href="#footer">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header> -->
-    <!-- <section class="intro">
-        <article>
-            <img class="circulo_intro" src="img/nosotros/01. Círculos.png">
-            <img class="verde_intro" src="img/nosotros/03. Verde.png">
-            <h1>¿Tienes una idea de página web?</h1>
-            <h3>En <b>SIGMOID </b>somos especialistas en cracion de paginas web</h3>
-            <p>
-                La manera de hacer negocio está cambiando, en la actualidad tener una página web es fundamental para
-                mejorar la percepción que tienen tus clientes de ti y para generar nuevas relaciones comerciales.
-                Asumimos la responsabilidad que su página web es la
-                imagen de su empresa en Internet. Realizamos el diseño de páginas web acorde con su imagen corporativa,
-                de rápida descarga, fáciles de navegar, con gran creatividad y utilizando las últimas tecnologías.
+    <section class="web-banner">
+        <img src="img/servicios/Softwar-main.png" alt="servicios">
+        <article class="web-banner-text">
+            <span>
+                <h1>Desarrollo web</h1>
+                <span>Haz que mas gente te conozca, contrata los servicios de desarrollo web que te ofrecemos.</span>
+            <br>
+            <h2>¡Prueba nuestro cotizador!</h2>
+            </span>
         </article>
-    </section> -->
-    <section class="posicionamiento">
-        <div class="data">POSICIONAMIENTO WEB</div>
-        <article>
-            <h1>
 
-            </h1>
-            <p>
-                En el mercado de internet ya no es suficiente tener simplemente una página web, pues si ésta no está
-                bien posicionada en los buscadores la gente no llegará nunca a visitarla. En COTOWEB ayudamos a nuestros
-                clientes a posicionarse en los buscadores web,
-                de forma que su página web sea encontrada por sus futuros clientes en los primeros resultados de las
-                búsquedas de su sector.
-            </p>
+    </section>
+
+    <section id="diseno" class="web-diseno">
+        <figure>
+            <img src="img/web/diseno-web.png" alt="diseno-web">
+        </figure>    
+        <article>
+            <h3>DISEÑO Y DESARROLLO WEB</h1>
+            <h1>Diseños increibles y paginas veloces.</h1>
+            <p>Esta comprobado que tu negocio online mas un diseño increíble aumenta tus ventas hasta un 67%.
+            Nosotros lo sabemos y por eso te ayudamos a construir la imagen de tu negocio en internet.</p>
+            <br>
+            <a href="#footer" class="btn-blue">Cotiza</a>
         </article>
     </section>
-    <section class="web-cotizador">
-        <div class="range">
-            <input id="ejemplo-range" class="range__input" type="range" value="0" min="0" max="60" step="15" list="number" />
-            <datalist class="range__list" id="number">
-              <option class="range__opt opt0">0</option> 
-              <option class="range__opt">15</option> 
-              <option class="range__opt">30</option> 
-              <option class="range__opt">45</option> 
-              <option class="range__opt">60</option> 
-            </datalist>
-            <span id="slidernumber">0</span>
-          </div>
+    <section class="web-multi">
+        <h3>RESPONSIVE DESIGN</h3>
+        <h1>Tu web disponible para cualquier tipo de dispositivo</h1>
+        <article>
+            
+        </article>
+        <figure>
+            <img src="img/servicios/App.png" alt="app">
+        </figure>
     </section>
-    <section style="margin: 450px;"></section>
     <footer id="footer">
         <div id="textoContacto" class="contact-form">
             <h3>Cuéntanos tus dudas</h3>
@@ -173,8 +104,7 @@
             <p>D: Calle 36 #530B entre 71 y 73 Col. Centro Mérida, Yucatán, México</p>
             <h3>Siguenos en:</h3>
             <a href=""><img src="img/icons/Instagram.png" id="insta" alt="instagram"></a>
-            <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face"
-                    alt="facebook"></a>
+            <a href="https://www.facebook.com/sigmoidmx/"><img src="img/icons/Facebook.png" id="face" alt="facebook"></a>
         </div>
         <div class="footlogo">
             <img src="img/Sigmoid.png" alt="logo">
@@ -195,20 +125,12 @@
     <script src="js/jquery.validate.js"></script>
     <script src="js/jquery.form.js"></script>
     <script>
-        $("#ejemplo-range").change(function(){
-            var newval=$(this).val();
-            //console.log(newval)
-            $("#slidernumber").text(newval);
-  });
-    
-    </script>
-    <script>
-        $(function () {
+        $(function() {
             $('#formulario').validate({
-                submitHandler: function (form) {
+                submitHandler: function(form) {
                     $(form).ajaxSubmit({
                         url: 'email.php',
-                        success: function () {
+                        success: function() {
                             $('#textoContacto h3').hide();
                             $('#formulario').hide();
                             $('#textoContacto').append("<p class='thanks'>Gracias por contactar con nosotros.</p>")
@@ -219,3 +141,5 @@
         })
     </script>
 </body>
+
+</html>
